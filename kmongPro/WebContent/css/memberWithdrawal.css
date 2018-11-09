@@ -1,0 +1,3780 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title></title>
+<style>
+pre, textarea {
+	overflow: auto;
+}
+*, pre {
+	word-break: break-all;
+}
+body, figure {
+	margin: 0;
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+.font-size-h5, h5 {
+	font-size: 14px !important;
+}
+hr, img {
+	border: 0;
+}
+img {
+	vertical-align: middle;
+}
+a {
+	background-color: transparent;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: "NotoSansKR Regular";
+	margin: 0;
+}
+b, strong {
+	font-family: "NotoSansKR Bold" !important;
+	font-weight: inherit;
+}
+a {
+	color: #f26656;
+	text-decoration: none;
+}
+dl, ol, ul {
+	margin-top: 0px;
+}
+ol, ul {
+	margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	line-height: 1.1;
+	color: inherit;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.h5, h5 {
+	font-size: 13px;
+}
+input {
+	-webkit-appearance: none !important;
+}
+::selection {
+	background: #FAE57C;
+	color: #4d4d4d;
+}
+.font-size-h6, h6 {
+	font-size: 12px !important;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+code, kbd, pre, samp {
+	font-size: 1em;
+}
+button, select {
+	text-transform: none;
+}
+.h6, h6 {
+	font-size: 11px;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 12px;
+	line-height: 1.5438;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+textarea {
+	resize: none;
+}
+.font-size-h2, h2 {
+	font-size: 20px !important;
+}
+.h2, h2 {
+	font-size: 23px;
+}
+.font-size-h4, h4 {
+	font-size: 16px !important;
+}
+button {
+	overflow: visible;
+}
+.font-size-h3, h3 {
+	font-size: 18px !important;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+address, dl {
+	margin-bottom: 20px;
+}
+dt, kbd kbd {
+	font-weight: 700;
+}
+dd, dt {
+	line-height: 1.5438;
+}
+dd {
+	margin-left: 0px;
+}
+.h4, h4 {
+	font-size: 15px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.h3, h3 {
+	font-size: 17px;
+}
+body {
+	background: #fafafa !important;
+	font-size: 14px;
+}
+body {
+	line-height: 1.5438;
+	color: #4d4d4d;
+}
+body {
+	letter-spacing: -0.3px;
+	font-size: 13px;
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	background-color: #FAFAFA;
+}
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	background: #fafafa !important;
+	font-size: 14px;
+}
+.global-body {
+	margin-top: 100px;
+}
+.global-body.chrome-download {
+	margin-top: 132px;
+}
+.fade {
+	opacity: 0;
+	transition: opacity .15s linear;
+}
+.modal, .modal-backdrop {
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+.border-radius {
+	border-radius: 4px !important;
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: 750px;
+}
+.container, .container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+}
+.container, .container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: 970px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.font-size-h5, h5 {
+	font-size: 14px !important;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.alarm-dropdown-menu-bottom, .text-center {
+	text-align: center !important;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+.font-size-h6 {
+	font-size: 11px !important;
+}
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+.padding-right-0 {
+	padding-right: 0px !important;
+}
+.padding-left-5 {
+	padding-left: 5px !important;
+}
+.pull-left {
+	float: left !important;
+}
+.my-profile-menu-list > li:not(:first-child), .padding-top-15 {
+	padding-top: 15px !important;
+}
+.padding-bottom-15 {
+	padding-bottom: 15px !important;
+}
+.pull-right {
+	float: right !important;
+}
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+.checkbox-text, .position-relative {
+	position: relative;
+}
+.padding-left-10 {
+	padding-left: 10px !important;
+}
+.alarm-menu-top-right-text {
+	position: relative;
+	top: 2px;
+}
+.alarm-menu-top-right > div, .inline-block {
+	display: inline-block;
+	zoom: 1;
+}
+.panel, .panel-heading, .form-control {
+	border-radius: 0;
+}
+.border-radius-none {
+	border-radius: 0 !important;
+}
+.panel-heading {
+	padding: 10px 12px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+.margin-left-5 {
+	margin-left: 5px !important;
+}
+.panel-body {
+	padding: 20px;
+}
+.bg-color-eee {
+	background: #EEE !important;
+}
+.padding-all-0 {
+	padding: 0 !important;
+}
+.position-absolute {
+	position: absolute;
+}
+.font-color-8, .font-color-lighter {
+	color: #878787 !important;
+}
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+.cash-banner-arrow, .font-color-base, .gig-form-header-item.active .gig-form-header-page-number, .my-profile-menu-list > .active > a {
+	color: #4d4d4d !important;
+}
+.cursor {
+	cursor: pointer;
+}
+.width-30px {
+	width: 30px !important;
+}
+.border-round, .gig-list-profile-background-border, .message-left-profile-image, .new-alarm-active {
+	border-radius: 500px !important;
+}
+.header-search-icon {
+	position: absolute;
+	top: 9px;
+	right: 11px;
+}
+.fa, .fa-stack {
+	display: inline-block;
+}
+.fa {
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0px, 0px);
+}
+.font-size-h6, h6 {
+	font-size: 12px !important;
+}
+.font-size-h4 {
+	font-size: 15px !important;
+}
+blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child, ol ol, ol ul, ul ol, ul ul {
+	margin-bottom: 0px;
+}
+.list-inline, .list-unstyled {
+	padding-left: 0px;
+	list-style: none;
+}
+.list-inline {
+	margin-left: -5px;
+}
+.header-margin-none, .label-margin-none, .margin-none, .panel-margin-none {
+	margin: 0;
+}
+.padding-left-25 {
+	padding-left: 25px !important;
+}
+.margin-right-5 {
+	margin-right: 5px !important;
+}
+.padding-left-15 {
+	padding-left: 15px !important;
+}
+.padding-right-15 {
+	padding-right: 15px !important;
+}
+.selling-panels > .events-more-btn > a, .selling-panels > .events-more-btn > a:active, .selling-panels > .events-more-btn > a:hover, a.plain, a.plain:active, a.plain:hover {
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.font-size-h2, h2 {
+	font-size: 20px !important;
+}
+.nav > li > a {
+	padding: 10px 15px;
+}
+.card-font-size-small {
+	font-size: 11px !important;
+}
+.NGB, .active.selling-history-message-count, .active > .kmongteam-nav-item, .active > .kmongteam-nav-item:focus, .active > .kmongteam-nav-item:hover, .ad-request-active, .ad-request-nav:focus, .ad-request-nav:hover, .become-seller-faq-active > h5, .bookmarks-menu-item.active > a, .category-list-item.active, .category-list-item > a:focus, .category-list-item > a:hover, .consulting-section-1 .consulting-panel .profile-wrap > h5, .consulting-section-3 .consulting-footer li, .event-banner-title, .event-nav-group > li.active > a, .gig-detail-top-nav-active, .gig-form-header-item, .gig-form-header-item .gig-form-header-page-number, .gig-form-header-item.active, .gig-form-header-item.active .gig-form-header-page-number, .gigs-search-categories:focus, .gigs-search-categories:hover, .heading-hover:focus, .heading-hover:hover, .kmong-KB-nav > li.active > a, .my-profile-menu-list > .active > a, .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover, .profits-work-nav > li.active > a, .seller-menu .active, .seller-menu-item:hover, .track-problem-resolution.active, .user-edit-text:focus, .user-edit-text:hover {
+	font-family: "NotoSansKR Bold" !important;
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.list-group {
+	margin-bottom: 20px;
+	padding-left: 0px;
+}
+.panel-group {
+	margin-bottom: 20px;
+}
+.brand-primary, .color-pink, .color-primary {
+	color: #f26656 !important;
+}
+.col-xs-1, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	width: 8.33%;
+}
+.nav {
+	margin-bottom: 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+.bg-color-white, .line-panel {
+	background-color: #fff !important;
+}
+.font-size-h3, h3 {
+	font-size: 18px !important;
+}
+.color-dark-gray {
+	color: #888 !important;
+}
+.border-radius {
+	border-radius: 5px !important;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #f26656;
+	border-color: #f0513e;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.collapsing, .dropdown, .dropup {
+	position: relative;
+}
+.line-panel, .my-profile-menu-list, .padding-left-0 {
+	padding-left: 0px !important;
+}
+.certification-tax-notification-body, .padding-all-10, .signup-agreement-body {
+	padding: 10px !important;
+}
+.border-solid {
+	border: 1px solid #E6E6E6 !important;
+}
+.work-before-box {
+	box-shadow: 0px 1px 3px 0px #ccc;
+}
+.container {
+	width: 1024px !important;
+}
+.border-radius {
+	border-radius: 4px !important;
+}
+.kmong-KB {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	width: 440px;
+	z-index: 999999;
+}
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+.margin-bottom-15 {
+	margin-bottom: 15px !important;
+}
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+.list-style-none {
+	list-style: none !important;
+}
+.font-size-h4, h4 {
+	font-size: 16px !important;
+}
+.brand-black, .color-black {
+	color: #4d4d4d !important;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+.form-control, .input-file-form-control, .select-control > select {
+	display: block;
+	width: 100%;
+	height: 52px;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 1.5438;
+	background-image: none;
+}
+.form-control, .input-file-form-control {
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.margin-bottom-5 {
+	margin-bottom: 5px !important;
+}
+.awesome-radio {
+	margin-bottom: 5px;
+}
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+.padding-right-80 {
+	padding-right: 80px !important;
+}
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+.leave-border-bottom {
+	border-bottom: 1px dashed #E6E6E6;
+}
+.kmong-KB-nav-shadow {
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.bg-color-black {
+	background-color: #4d4d4d;
+}
+.margin-left-0 {
+	margin-left: 0px !important;
+}
+.margin-right-0 {
+	margin-right: 0px !important;
+}
+.overflow-y {
+	overflow-y: scroll;
+}
+.kmong-KB-footer {
+	z-index: 100;
+	position: absolute;
+	bottom: 45px;
+	left: 0px;
+	right: 0px;
+}
+.bg-color-fa {
+	background-color: #FAFAFA !important;
+}
+.border-radius-top-none {
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+.border-top-solid {
+	border-top: solid #E6E6E6 1px !important;
+}
+.color-white {
+	color: #fff !important;
+}
+.container-fluid::after, .container-fluid::before, .container::after, .container::before, .row::after, .row::before {
+	content: " ";
+	display: table;
+}
+.container::after {
+	clear: both;
+}
+.kmong-nps.container {
+	width: 342px !important;
+	position: fixed;
+	bottom: 10px;
+	right: 20%;
+	z-index: 9999;
+}
+input[type=file], legend, output {
+	display: block;
+}
+.text-justify {
+	text-align: justify;
+}
+.font-size-h5 {
+	font-size: 13px !important;
+}
+.text-left-imp {
+	text-align: left !important;
+}
+.alarm-dropdown-menu, .border-top-category, .dropdown-menu, .gig-count-word .count-words-menu, .gig-detail-menu, .interest-box, .user-bank-dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	z-index: 1000;
+	display: none;
+	float: left;
+	padding: 5px 0;
+	margin-top: 0px;
+	list-style: none;
+	font-size: 13px;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px #ccc;
+	background-clip: padding-box;
+}
+.width-120px {
+	width: 120px !important;
+}
+.input-group-xs > .form-control, .input-group-xs > .input-file-form-control, .input-group-xs > .input-group-addon, .input-group-xs > .input-group-btn > .btn, .input-xs, .select-picker-xs .btn {
+	height: 32px;
+	padding: 7px 10px;
+	font-size: 11px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.border-radius-0, .border-radius-none, .user-profile-bottom-container {
+	border-radius: 0 !important;
+}
+.border-bottom-solid {
+	border-bottom: solid #E6E6E6 1px !important;
+}
+.col-xs-2 {
+	width: 16.66%;
+}
+.line-panel, .padding-top-0 {
+	padding-top: 0px !important;
+}
+.help-block {
+	display: block;
+	padding-left: 15px;
+	font-size: 11px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #8c8c8c;
+}
+.bg-color-transparent {
+	background-color: transparent !important;
+}
+.col-xs-11 {
+	width: 91.66%;
+}
+.awesome-radio-body, .awesome-radio-body::after, .awesome-radio-body::before, .checkmark-circle {
+	position: relative;
+	display: inline-block;
+}
+.awesome-radio-body {
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.col-xs-10 {
+	width: 83.33%;
+}
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+.row::after {
+	clear: both;
+}
+.col-xs-7 {
+	width: 58.33%;
+}
+.col-xs-5 {
+	width: 41.66%;
+}
+.col-xs-4 {
+	width: 33.33%;
+}
+.padding-right-5 {
+	padding-right: 5px !important;
+}
+.color-dark-yellow-400, .color-yellow {
+	color: #ffd400;
+}
+.width-100 {
+	width: 100% !important;
+}
+.panel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.extra-option-list-group-item, .gig-form-container .gig-form-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, .index-side-list-group-item, .list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.extra-option-list-group-item, .gig-form-container .gig-form-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, .index-side-list-group-item, .list-group-item, .panel-default {
+	border-color: #E6E6E6 !important;
+}
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+.alert .alert-link, .alert-sm .alert-link, .alert-xs .alert-link, .close {
+	font-weight: 700;
+}
+.close {
+	float: right;
+	font-size: 19.5px;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0px 1px 0px #fff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+.font-color-light {
+	color: #666 !important;
+}
+.hidden, .hide, .visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+	display: none !important;
+}
+.width-25px {
+	width: 25px !important;
+}
+.pull-right {
+	float: right;
+}
+.header-list {
+	padding: 8px 15px 5px !important;
+	color: #666;
+	border-bottom: solid transparent 3px;
+}
+.header-search-group {
+	width: 230px;
+}
+.pull-left {
+	float: left;
+}
+.list-inline > li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+.btn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 1.5438;
+	border-radius: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.line-height {
+	line-height: 1.5em;
+	letter-spacing: -0.4px;
+}
+.col-xs-9 {
+	width: 75%;
+}
+.padding-left-60 {
+	padding-left: 60px !important;
+}
+.link-color-blue {
+	color: #006ad6 !important;
+}
+.text-underline {
+	text-decoration: underline !important;
+}
+.text-style, .title-text-style {
+	line-height: 1.7em;
+	letter-spacing: -0.4px;
+}
+.btn-black {
+	color: #fff;
+	background-color: #4d4d4d;
+	border-color: #404040;
+}
+.btn-group-sm > .btn, .btn-sm, .gig-detail-profile-btn {
+	padding: 11px 14px;
+	font-size: 13px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.btn-block {
+	display: block;
+	width: 100%;
+}
+.btn-ad, .btn-xss {
+	padding: 5px 10px;
+}
+.font-size-h1, h1 {
+	font-size: 22px !important;
+}
+.font-size-h1 {
+	font-size: 36px !important;
+}
+.font-size-h1, h1 {
+	font-size: 22px !important;
+}
+.width-20px {
+	width: 20px !important;
+}
+.cancel-close {
+	position: absolute;
+	top: -20px;
+	right: 10px;
+}
+.header-logo-align {
+	height: 32px;
+}
+.padding-top-5 {
+	padding-top: 5px !important;
+}
+.line-panel, .padding-bottom-5 {
+	padding-bottom: 5px !important;
+}
+.border-none {
+	border: none !important;
+}
+.panel, .panel-heading, .form-control {
+	border-radius: 0;
+}
+.border-radius-none {
+	border-radius: 0 !important;
+}
+.list-unstyled li {
+	padding: 5px 20px;
+}
+.padding-all-15 {
+	padding: 15px !important;
+}
+.kmong-nps-finish {
+	background: #ffd400;
+	height: 115px;
+	border-radius: 5px 5px 0 0;
+}
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+.kmong-nps-finish-bg {
+	background: url(/img/kmong_nps/kmong_nps_bg.png) center center/contain no-repeat;
+	width: 100%;
+	height: 185px;
+}
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+.kmong-nps-finish-img {
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	background: #ffd400;
+	border-radius: 50%;
+	padding: 12px;
+}
+.text-shadow-none {
+	text-shadow: 0px 0px 0px transparent !important;
+}
+.opacity-1 {
+	opacity: 1;
+}
+.kmong-how-close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	-webkit-appearance: none;
+}
+.col-xs-offset-4 {
+	margin-left: 33.33%;
+}
+.kmong-nps-graduration {
+	top: 10px;
+}
+.kmong-nps-control::before, .kmong-nps-graduration::after {
+	display: table;
+	content: "";
+}
+.kmong-nps-control::before {
+	width: 15px;
+	height: 15px;
+	border-top: 1px solid #E6E6E6;
+	border-left: 1px solid #E6E6E6;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: #fff;
+	position: absolute;
+	top: -7px;
+	left: 163px;
+}
+.bg-color-gray {
+	background-color: #F1F1F1 !important;
+}
+.input-group-sm > .form-control, .input-group-sm > .input-file-form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-sm, .message-box-request-gigs-select, .select-picker-sm .btn {
+	height: 40px;
+	padding: 11px 14px;
+	font-size: 13px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.border-radius-bottom-none {
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+.padding-left-30 {
+	padding-left: 30px !important;
+}
+textarea.form-control, textarea.input-file-form-control {
+	height: auto;
+}
+.kmong-nps-control > textarea {
+	height: 90px !important;
+	overflow-y: auto;
+	border-radius: 0 !important;
+}
+.input-text-group > input {
+	text-align: right;
+	padding-right: 30px !important;
+}
+:-ms-input-placeholder.form-control, :-ms-input-placeholder.input-file-form-control {
+	color: #999;
+}
+.color-gray-d1 {
+	color: #ccc !important;
+}
+.font-size-20 {
+	font-size: 20px !important;
+}
+.chevron-down {
+	font-size: 10px;
+	margin-top: 3px;
+}
+.fa-exclamation-triangle::before, .fa-warning::before {
+	content: "\f071";
+}
+:last-child.awesome-radio {
+	margin-bottom: 0px;
+}
+.awesome-radio > label {
+	margin: 0;
+}
+.vertical-align-middle {
+	vertical-align: middle;
+}
+input[type=checkbox], input[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type=checkbox], input[type=radio] {
+	margin: 4px 0 0;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+.awesome-radio input[type=radio] {
+	opacity: 0;
+	z-index: 1;
+}
+.awesome-radio-body::before {
+	content: "";
+	width: 13px;
+	height: 13px;
+	left: 0px;
+	border: 1px solid #979797;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: border .15s ease-in-out;
+}
+.awesome-radio-body::after {
+	content: " ";
+	width: 9px;
+	height: 9px;
+	left: 9px;
+	top: -2px;
+	margin-left: -20px;
+	border-radius: 50%;
+	background-color: #ffd400;
+	-webkit-transform: scale(0, 0);
+	transform: scale(0);
+	transition: -webkit-transform .1s cubic-bezier(.8, -.33, .2, 1.33);
+	transition: transform .1s cubic-bezier(.8, -.33, .2, 1.33);
+	transition: transform .1s cubic-bezier(.8, -.33, .2, 1.33), -webkit-transform .1s cubic-bezier(.8, -.33, .2, 1.33);
+}
+.card-font-size-default, p {
+	font-size: 13px !important;
+}
+.awesome-radio-text {
+	display: inline-block;
+}
+.card-font-size-default, p {
+	font-size: 13px !important;
+}
+.kmong-nps-graduration::after {
+	clear: both;
+}
+.slider {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.slider.slider-horizontal {
+	width: 100%;
+	height: 20px;
+}
+.slider-track {
+	background-color: #E6E6E6;
+	background-image: linear-gradient(to bottom,#E6E6E6,#E6E6E6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E6E6', endColorstr='#E6E6E6', GradientType=0);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	position: absolute;
+	cursor: pointer;
+}
+.slider.slider-horizontal .slider-track {
+	height: 10px;
+	width: 100%;
+	margin-top: -5px;
+	top: 50%;
+	left: 0px;
+}
+.popover, .tooltip {
+	font-family: "NotoSansKR Regular" !important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-break: auto;
+	line-height: 1.5438;
+	text-shadow: none;
+	text-transform: none;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	text-decoration: none;
+}
+.tooltip {
+	position: absolute;
+	z-index: 1070;
+	display: block;
+	text-align: left;
+	text-align: start;
+	white-space: normal;
+	font-size: 11px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.tooltip.top {
+	margin-top: -3px;
+	padding: 5px 0;
+}
+.slider-handle {
+	background-image: linear-gradient(to bottom,#fff,#fff);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 1px 2px rgba(0,0,0,0.25);
+	top: 0px;
+	background-color: #337AB7;
+	border: 0 solid transparent;
+}
+.slider .hide, .slider input {
+	display: none;
+}
+.slider .tooltip.top {
+	margin-top: -36px;
+}
+.slider-handle, .slider-tick {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.slider-handle.round {
+	border-radius: 20px;
+}
+.slider.slider-horizontal .slider-handle, .slider.slider-horizontal .slider-tick {
+	margin-left: -10px;
+}
+.tooltip-arrow {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-color: transparent;
+	border-style: solid;
+}
+.tooltip.top .tooltip-arrow, .tooltip.top-left .tooltip-arrow, .tooltip.top-right .tooltip-arrow {
+	bottom: 0px;
+	border-width: 5px 5px 0;
+	border-top-color: #000;
+}
+.tooltip.top .tooltip-arrow {
+	left: 50%;
+	margin-left: -5px;
+}
+.media-object.img-thumbnail, .tooltip-inner {
+	max-width: none;
+}
+.tooltip-inner {
+	white-space: nowrap;
+	padding: 3px 8px;
+	color: #fff;
+	text-align: left;
+	background-color: #000;
+}
+.slider .tooltip-inner {
+	white-space: nowrap;
+	max-width: none;
+}
+.slider-track-high, .slider-track-low {
+	box-sizing: border-box;
+	position: absolute;
+	background: 0 0;
+}
+.slider-selection {
+	background-color: #ffd400;
+	background-image: linear-gradient(to bottom,#ffd400,#ffd400);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd400', endColorstr='#ffd400', GradientType=0);
+	box-sizing: border-box;
+	position: absolute;
+}
+.slider.slider-horizontal .slider-selection, .slider.slider-horizontal .slider-track-high, .slider.slider-horizontal .slider-track-low {
+	height: 100%;
+	top: 0px;
+	bottom: 0px;
+}
+.kmong-nps-graduration > div {
+	width: 10%;
+	border-left: 1px solid #E6E6E6;
+	float: left;
+	position: relative;
+	top: 6px;
+	height: 20px;
+}
+.kmong-nps-graduration > div:first-child, .kmong-nps-graduration > div:nth-child(6) {
+	top: 0px !important;
+}
+.kmong-nps-graduration > div:nth-child(9) {
+	border-right: 1px solid #E6E6E6;
+}
+.kmong-nps-graduration > div:last-child {
+	top: 0px !important;
+	border-right: 1px solid #E6E6E6;
+	border-left: 0;
+}
+.kmong-nps-graduration > div > span {
+	position: absolute;
+	top: -20px;
+	left: -5px;
+}
+.kmong-nps-graduration > div > span:nth-child(2) {
+	left: initial;
+	right: -5px;
+}
+.index-seller-modal-dialog, .modal-dialog, .user-modal-style {
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+/* @media all and (min-width:768px) */
+.index-seller-modal-dialog, .modal-dialog, .user-modal-style {
+	width: 600px;
+	margin: 30px auto;
+}
+.modal-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) !important;
+	transform: translate(-50%, -50%) !important;
+	margin: 0 !important;
+}
+.modal.fade .index-seller-modal-dialog, .modal.fade .modal-dialog, .modal.fade .user-modal-style {
+	-webkit-transform: translate(0, -25%);
+	transform: translate(0px, -25%);
+	transition: -webkit-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+.modal-content {
+	border-radius: 0 !important;
+	border: none !important;
+}
+.modal-content, .popover {
+	background-clip: padding-box;
+}
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 15px;
+	box-shadow: 0px 3px 9px rgba(0,0,0,0.5);
+	outline: 0;
+}
+/* @media all and (min-width:768px) */
+.modal-content {
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+.modal-content {
+	border-radius: 0 !important;
+	border: none !important;
+}
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+.padding-left-80 {
+	padding-left: 80px !important;
+}
+.border-dashed-left {
+	border-left: dashed #E6E6E6 1px;
+}
+.width-55px {
+	width: 55px !important;
+}
+.padding-left-45 {
+	padding-left: 45px !important;
+}
+.padding-right-45 {
+	padding-right: 45px !important;
+}
+.padding-all-30 {
+	padding: 30px !important;
+}
+.panel-body::after, .panel-body::before {
+	content: " ";
+	display: table;
+}
+.panel-body::after {
+	clear: both;
+}
+.line-panel {
+	border-bottom: 2px solid #4d4d4d !important;
+}
+.margin-right-30 {
+	margin-right: 30px !important;
+}
+.my-profile-menu-list > .active > a {
+	border-bottom: 4px solid #ffd400;
+}
+/* @media all and (min-width:1301px) */
+.kmong-quick-menu {
+	width: 70px;
+	position: absolute;
+	top: 582px;
+	right: -40px;
+	z-index: 93;
+}
+/* @media all and (min-width:1301px) */
+.kmong-quick-menu-wrap {
+	position: absolute;
+	width: 70px;
+	display: inline-block;
+	font-size: 10px;
+}
+/* @media all and (min-width:1301px) */
+.kmong-quick-menu-wrap.fixed {
+	position: fixed !important;
+	top: 140px;
+}
+.width-10px {
+	width: 10px !important;
+}
+.border-left, .input-file-close > div > i {
+	border-left: solid #E6E6E6 1px;
+}
+.carousel, .carousel-inner {
+	position: relative;
+}
+.carousel-inner {
+	overflow: hidden;
+	width: 100%;
+}
+.kmong-KB-menu-margin-adjust {
+	margin-top: 2px;
+}
+.carousel-inner > .item {
+	display: none;
+	position: relative;
+	transition: .6s ease-in-out left;
+}
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+	display: block;
+}
+.carousel-inner > .active {
+	left: 0px;
+}
+.kmong-KB .carousel div > div.col-xs-11 {
+	width: 94%;
+}
+.nav::after, .nav::before {
+	content: " ";
+	display: table;
+}
+.nav::after {
+	clear: both;
+}
+.nav > li, .nav > li > a {
+	display: block;
+	position: relative;
+}
+.kmong-KB-nav > li {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.fa-arrow-left::before {
+	content: "\f060";
+}
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+.padding-all-20 {
+	padding: 20px !important;
+}
+.la-ball-fall, .la-ball-fall > div {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.la-ball-fall {
+	display: block;
+	font-size: 0px;
+	height: 20px;
+}
+.la-ball-fall > div {
+	display: inline-block;
+	float: none;
+	background-color: currentColor;
+	border: 0 solid currentColor;
+	width: 6px;
+	height: 6px;
+	margin: 6px 4px 4px;
+	border-radius: 100%;
+	opacity: 0;
+	-webkit-animation: ball-fall 1s ease-in-out infinite;
+	-moz-animation: ball-fall 1s ease-in-out infinite;
+	-o-animation: ball-fall 1s ease-in-out infinite;
+	animation: ball-fall 1s ease-in-out infinite;
+}
+.la-ball-fall > div:nth-child(1) {
+	-webkit-animation-delay: -.2s;
+	-moz-animation-delay: -.2s;
+	-o-animation-delay: -.2s;
+	animation-delay: -0.2s;
+}
+.la-ball-fall > div:nth-child(2) {
+	-webkit-animation-delay: -.1s;
+	-moz-animation-delay: -.1s;
+	-o-animation-delay: -.1s;
+	animation-delay: -0.1s;
+}
+.la-ball-fall > div:nth-child(3) {
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.padding-left-20 {
+	padding-left: 20px !important;
+}
+.padding-right-20 {
+	padding-right: 20px !important;
+}
+a.plain-color-white {
+	text-decoration: none;
+	color: #fff !important;
+}
+.tab-content > .tab-pane {
+	display: none;
+}
+.tab-content > .active {
+	display: block;
+}
+.pill-content > .pill-pane, .tab-content > .tab-pane {
+	display: none;
+}
+.pill-content > .active, .tab-content > .active {
+	display: block;
+}
+.margin-all-0 {
+	margin: 0 !important;
+}
+.border-top-none {
+	border-top: none !important;
+}
+.btn-default {
+	color: #4d4d4d;
+	background-color: #fff;
+	border-color: #e6e6e6;
+}
+.btn-group-xs > .btn, .btn-ssm, .btn-xs {
+	font-size: 11px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.btn-group-xs > .btn, .btn-xs {
+	padding: 1px 5px;
+}
+.margin-top-15 {
+	margin-top: 15px !important;
+}
+.kmong-kb-search {
+	color: #666;
+}
+:first-child.extra-option-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, :first-child.index-side-list-group-item, :first-child.list-group-item {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+:last-child.extra-option-list-group-item, .gig-form-container :last-child.gig-form-list-group-item, :last-child.index-side-list-group-item, :last-child.list-group-item {
+	margin-bottom: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.input-text-group {
+	position: relative;
+}
+.input-text-group > .input-inner-text-sm-no-label {
+	top: 10px !important;
+}
+.input-text-group > .input-inner-text-default, .input-text-group > .input-inner-text-default-no-label, .input-text-group > .input-inner-text-lg-no-label, .input-text-group > .input-inner-text-sm-no-label {
+	position: absolute;
+	top: 46px;
+	right: 14px;
+	z-index: 2;
+	text-align: center;
+	pointer-events: none;
+	color: #878787;
+}
+input[type=search] {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+.fa-chevron-circle-down::before {
+	content: "\f13a";
+}
+.twitter-typeahead {
+	width: 100%;
+}
+.kmong-KB-search-icon {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.kmong-KB .kb-category-close {
+	position: absolute;
+	top: 8px;
+	right: 13px;
+}
+.fa-close::before, .fa-remove::before, .fa-times::before {
+	content: "\f00d";
+}
+.fa-search::before {
+	content: "\f002";
+}
+legend, pre {
+	color: #4d4d4d;
+}
+code, kbd, pre, samp {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+.tt-menu {
+	width: 100%;
+	border-top: 2px solid #ffd400;
+	text-align: left;
+	position: relative;
+	z-index: 2;
+}
+.kmong-KB .carousel > div > div.col-xs-1, .kmong-KB .carousel > div > div.kmong-grid-3-10, .kmong-KB .carousel > div > div.kmong-grid-3-20, .kmong-KB .carousel > div > div.kmong-grid-4-10, .kmong-KB .carousel > div > div.kmong-grid-4-20, .kmong-KB .carousel > div > div.kmong-grid-4-40, .kmong-KB .carousel > div > div.kmong-grid-4-5, .kmong-KB .carousel > div > div.kmong-grid-5-20 {
+	width: 6%;
+}
+.kmong-KB-nav > li.active > a {
+	box-shadow: inset 0px -3px #ffd400;
+	color: #4d4d4d !important;
+}
+.kmong-KB-message-box {
+	position: absolute;
+	left: -220px;
+	top: 4px;
+}
+.kmong-KB-message-box::after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right: -5px;
+	top: 8px;
+	background: #fae57c;
+}
+.bg-color-light-yellow {
+	background-color: #fffdec !important;
+}
+.word-break {
+	word-break: break-all;
+}
+.kmong-KB-unread-notification-body {
+	padding: 10px;
+	width: 195px;
+	position: relative;
+	background-color: #fae57c !important;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+.card-font-size-small {
+	font-size: 11px !important;
+}
+.kmong-KB-notification-menu-unread-count {
+	top: -4px;
+	right: -1px;
+}
+.bg-color-count-red {
+	background: #ff402b;
+}
+.kmong-KB-notification-menu-unread-count > span {
+	padding: 0 5px;
+}
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+}
+/* @media all and (min-width:768px) */
+.navbar {
+	border-radius: 5px;
+}
+.header-main, .navbar-fixed-bottom, .navbar-fixed-top {
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	z-index: 1030;
+}
+.header-main, .navbar-fixed-top {
+	top: 0px;
+	border-width: 0 0 1px;
+}
+/* @media all and (min-width:768px) */
+.header-main, .navbar-fixed-bottom, .navbar-fixed-top {
+	border-radius: 0;
+}
+.header-main, .navbar-fixed-top {
+	z-index: 999 !important;
+}
+.navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before {
+	content: " ";
+	display: table;
+}
+.navbar::after {
+	clear: both;
+}
+.bg-color-yellow, .bg-color-yellow-400, .bg-kmong-brand-color {
+	background-color: #ffd400 !important;
+}
+.header-yellow {
+	height: 59px;
+}
+:first-child.header-list {
+	padding-left: 0px !important;
+}
+.header-list.mypage-menu, .header-list.mypage-menu:hover {
+	border-bottom: solid transparent 3px;
+}
+.header-list.mypage-menu {
+	margin-top: 3px;
+}
+.border-top-category {
+	width: 290px;
+	margin-top: 4px;
+}
+.border-top-category.mypage-menu {
+	border-top: 3px solid #ffd400;
+}
+a.plain-color-default, a.plain-color-default:hover {
+	text-decoration: none;
+	color: #f26656 !important;
+}
+.alarm-dropdown-menu > li > a, .border-top-category > li > a, .dropdown-menu > li > a, .gig-count-word .count-words-menu > li > a, .gig-detail-menu > li > a, .interest-box > li > a, .user-bank-dropdown-menu > li > a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.5438;
+	color: #4d4d4d;
+	white-space: nowrap;
+}
+.fa-chevron-down::before {
+	content: "\f078";
+}
+.top-35 {
+	top: 35px !important;
+}
+.header-dropdown-menu {
+	min-width: 130px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.dropdown-arrow {
+	min-width: 0px;
+}
+.panel-group .panel {
+	margin-bottom: 0px;
+	border-radius: 5px;
+}
+.panel-group .panel + .panel {
+	margin-top: 5px;
+}
+.panel-group .panel-heading, .panel > .table-bordered > tbody > tr:first-child > td, .panel > .table-bordered > tbody > tr:first-child > th, .panel > .table-bordered > tbody > tr:last-child > td, .panel > .table-bordered > tbody > tr:last-child > th, .panel > .table-bordered > tfoot > tr:last-child > td, .panel > .table-bordered > tfoot > tr:last-child > th, .panel > .table-bordered > thead > tr:first-child > td, .panel > .table-bordered > thead > tr:first-child > th, .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td, .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th, .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td, .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th, .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td, .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th, .panel > .table-responsive > .table-bordered > thead > tr:first-child > td, .panel > .table-responsive > .table-bordered > thead > tr:first-child > th {
+	border-bottom: 0;
+}
+.collapse {
+	display: none;
+}
+h5 .fa {
+	font-size: 14px;
+}
+.fa-caret-down::before {
+	content: "\f0d7";
+}
+.new-alarm-active {
+	margin-left: 5px;
+	vertical-align: 1px;
+	font-size: 11px;
+	color: #fff;
+	padding: 0 5px 1px;
+	background-color: #f26656;
+}
+.dropdown-arrow img {
+	position: absolute;
+	top: -4px;
+	left: 10px;
+}
+.fa-sort-desc::before, .fa-sort-down::before {
+	content: "\f0dd";
+}
+[role=button] {
+	cursor: pointer;
+}
+.alarm-dropdown-menu {
+	right: -5px;
+	left: auto;
+	width: 380px;
+	padding: 0 !important;
+	margin-top: 6px !important;
+	font-size: 11px;
+	border-radius: 5px;
+}
+.alarm-dropdown-arrow {
+	min-width: 0px;
+}
+.alarm-dropdown-menu-bottom, .alarm-dropdown-menu-top {
+	padding: 5px 10px;
+	background-color: #f5f5f5;
+}
+.alarm-dropdown-menu-top {
+	border-bottom: solid #e5e5e5 1px;
+}
+.alarm-list {
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.alarm-dropdown-arrow img {
+	position: absolute;
+	top: -5px;
+	right: 10px;
+}
+.fa-2x {
+	font-size: 2em;
+}
+i.kmong {
+	font-family: kmong-icon !important;
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.kmong-notification::before {
+	content: "\e903";
+}
+.kmong-message::before {
+	content: "\e902";
+}
+.kmong-dash-board::before {
+	content: "\e901";
+}
+.width-100px {
+	width: 100px !important;
+}
+.fa-times-circle::before {
+	content: "\f057";
+}
+</style>
+</head>
+<body id="master_body">
+<header>
+
+    
+                            
+                <nav class="navbar navbar-fixed-top" id="kmongNavBar" style="top: 0px;">
+                  <div class="bg-color-black position-relative" id="chromeDownloadBody" style="z-index: 9999999;">
+        <div class="container">
+            <div class="row color-white" style="padding-top: 6px; padding-bottom: 6px;">
+                <div class="col-xs-12 text-center">
+                    크몽은 Chrome에 최적화 되어있습니다.&nbsp;&nbsp;<a class="color-white text-underline" href="https://www.google.com/chrome/" target="_blank">Chrome 다운로드</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle cursor" id="chromeDownloadCloseBtn"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+                  <div class="header-yellow bg-color-yellow-400">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 padding-top-10 padding-bottom-10">
+                <ul class="list-inline margin-bottom-0 margin-top-5">
+                    
+                    <li class="pull-left header-logo-align">
+                        <a class="margin-top-5 inline-block sendGAEventClz" href="https://kmong.com" data-name="노란 헤더 - 서비스 검색 클릭">
+                            <img title="당신의 '일'을 해결해줄 전문가들이 있는 곳, 서비스 마켓플레이스 크몽 ( Kmong )" class="width-100px" src="/img/main/kmong_logo_20170518.png">
+                        </a>
+                    </li>
+
+                    
+                    <li class="pull-left header-search-group position-relative">
+                        <form class="margin-bottom-0" id="searchHeader" action="https://kmong.com/gigs/keyword" method="GET" accept-charset="UTF-8" data-name="노란 헤더">
+                                                    <input name="keyword" class="form-control input-xs border-none border-radius-0" id="keyword" type="text" placeholder="검색어를 입력해 주세요">
+                                                <i class="fa fa-search header-search-icon text-center font-color-base cursor sendGAEventClz" aria-hidden="true" onclick="$('#searchHeader').submit();" data-name="노란 헤더 - 서비스 검색 클릭"></i>
+                        </form>
+                    </li>
+
+                    
+                    
+                        
+                            
+                            
+                        
+                    
+                </ul>
+            </div>
+            
+                
+                <div class="col-xs-6">
+                    <div class="inline-block pull-right">
+                                                <div class="inline-block pull-left padding-top-20 padding-right-0">
+                            <ul class="list-inline margin-all-0">
+                                <li title="" class="padding-right-5 padding-left-0" data-original-title="마이크몽" data-toggle="tooltip" data-placement="bottom" data-header-style="노란">
+                        <a class="margin-right-5 plain sendGAEventClz" href="https://kmong.com/my_kmong" data-name="노란 헤더 - 마이크몽 아이콘">
+                <i class="kmong kmong-dash-board color-black fa-2x"></i>
+            </a>
+        </li>
+
+        
+
+        <li title="" class="padding-right-5 padding-left-0" data-original-title="메시지" data-toggle="tooltip" data-placement="bottom">
+                        <a class="plain margin-right-5 sendGAEventClz" href="https://kmong.com/inbox" data-name="노란 헤더 - 마이크몽 아이콘">
+                <i class="kmong kmong-message color-black fa-2x"></i>
+            </a>
+        </li>
+
+        
+
+        <li class="padding-right-5 padding-left-0">
+            <div>
+                        </div>
+
+            <div class="dropdown">
+                <a class="plain padding-bottom-20 margin-right-5 cursor kmongAlarmIcon" id="alarm" role="button" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">
+                    <i class="kmong kmong-notification color-black fa-2x"></i>
+                </a>
+
+                <ul class="alarm-dropdown-menu" role="menu" aria-labelledby="alarm">
+                    <li class="alarm-dropdown-arrow">
+                        <img src="/img/main/alram_arr.png">
+                    </li>
+
+                            <!-- top -->
+                    <li class="alarm-dropdown-menu-top">
+                        <ul class="list-inline">
+                            <li>
+                                <b>알림&nbsp;(0)</b>
+                            </li>
+
+                            <li class="alarm-menu-top-right pull-right">
+                                <div>
+                                    <a class="sendGAEventClz" href="https://kmong.com/my_profile/mail_settings" data-name="노란 헤더 - 종모양 - 알림 설정">
+                                        <img title="" style="width: 13px;" src="/img/dashboard/setting.png" data-original-title="알림 설정" data-toggle="tooltip" data-placement="right">
+                                    </a>
+                                </div>
+
+                                <div class="alarm-menu-top-right-text">
+                                    <a class="plain-color-default sendGAEventClz" href="https://kmong.com/my_kmong?type=notification" data-name="노란 헤더 - 종모양 - 마이크몽 보기">&nbsp;마이크몽 보기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-group alarm-list margin-bottom-0" id="alram_layout_div" style="display: none;">
+
+                            
+
+                            <li class="text-center margin-top-15" id="notificationLoadingImg" style="margin-bottom: 15px; display: none;">
+                                <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                            </li>
+                        </ul>
+
+                        <div class="text-center margin-top-15" style="margin-bottom: 15px;">
+                            <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                        </div>
+                        <div class="text-center margin-top-15" style="margin-bottom: 15px; display: none;">
+                            <div><img title="" style="left: -3px; top: -2px; width: 13px; position: relative;" src="/img/main/desktop/header/header_alram.png">알림 내역이 없습니다.</div>
+                        </div>
+
+                    </li>
+
+                            <!-- bottom -->
+                    <li class="alarm-dropdown-menu-bottom">
+                        <a class="plain-color-default sendGAEventClz" href="https://kmong.com/my_kmong?type=notification" data-name="노란 헤더 - 종모양 - 알림 모두보기">모두보기</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <style>
+            .notificationTooltip .tooltip-inner {
+                padding:5px;
+                max-width: 100px;
+                text-align: left;
+                /* If max-width does not work, try using width instead */
+                width: 100px;
+            }
+        </style>
+                            </ul>
+                        </div>
+                                                <div class="inline-block pull-left padding-top-15">
+                            <ul class="list-inline margin-all-0">
+                                
+                                    
+
+                                    <li class="dropdown padding-left-0" data-position="default">
+    <a class="plain  inline-block position-relative" href="https://kmong.com/my_kmong" data-header-style="노란">
+        <div class="inline-block padding-right-0 padding-left-5 pull-left">
+            <img title="lvxclmlawe_FosT8" class="border-round width-30px" onerror="this.onerror=null;this.src='/img/tools/main_user_gray.png';" src="https://d2v80xjmx68n4w.cloudfront.net/members/thumbs/BeJne1519018545.PNG">
+                    </div>
+        <div class="inline-block padding-left-10 padding-right-0 pull-right  margin-top-5 padding-bottom-10 ">
+            <span>
+                lvxclmlawe_FosT8 &nbsp;
+                <i class="fa fa-sort-desc"></i>
+            </span>
+                    </div>
+    </a>
+    <div class="header-dropdown-menu dropdown-menu padding-all-0 margin-top-0 margin-left-5 top-35" role="menu" aria-labelledby="dLabel">
+        <div class="dropdown-arrow">
+            <img src="/img/main/desktop/main_toparrow.png">
+        </div>
+        <div class="panel-group margin-bottom-0" id="accordion" role="tablist" aria-multiselectable="true">
+
+            
+            
+            
+
+            <div class="panel border-none margin-top-0 header-root-dropdown-menu border-radius-bottom-none">
+                <a class="plain sendGAEventClz" href="https://kmong.com/my_kmong" data-name="노란 헤더 - 드랍다운 메뉴 - 마이크몽">
+                    <div class="panel-heading padding-left-15 padding-right-15  padding-bottom-10 padding-top-10">
+                        <h5 class="header-margin-none">
+                            마이크몽
+                        </h5>
+                    </div>
+                </a>
+            </div>
+            <div class="panel border-none margin-top-0">
+                <a class="plain collapsed" aria-expanded="true" aria-controls="collapseOne" href="#buying-collapse-default" data-toggle="collapse" data-parent="#accordion">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10" id="headerRootMenuBuyingList" role="tab">
+                        <h5 class="header-margin-none font-color-base">
+                            구매<span class="new-alarm-active" style="display: none;">0</span>
+                            <span class="pull-right">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </h5>
+                    </div>
+                </a>
+                <div class="panel-collapse collapse" id="buying-collapse-default" role="tabpanel" aria-labelledby="headerRootMenuBuyingList">
+                    <div class="panel-body bg-color-eee padding-all-0">
+                        <ul class="list-unstyled heading-hover-item">
+                            <li class="padding-left-15 padding-right-15">
+                                <a class="plain sendGAEventClz" href="https://kmong.com/my_orders" data-name="노란 헤더 - 드랍다운 메뉴 - 구매관리">구매관리<span class="new-alarm-active" style="display: none;">0</span></a>
+                            </li>
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_charge" data-name="노란 헤더 - 드랍다운 메뉴 - 결제내역">결제내역</a></li>
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/kmong_cash_history" data-name="노란 헤더 - 드랍다운 메뉴 - 크몽캐시">크몽캐시</a></li>
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/do_charge" data-name="노란 헤더 - 드랍다운 메뉴 - 캐시충전">캐시충전</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel border-none margin-top-0">
+                <a class="plain collapsed" aria-expanded="false" aria-controls="collapseTwo" href="#selling-collapse-default" data-toggle="collapse" data-parent="#accordion">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10" id="headerRootMenuSellingList" role="tab">
+                        <h5 class="header-margin-none font-color-base">
+                            판매 <span class="new-alarm-active" style="display: none;">0</span>
+                            <span class="pull-right">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </h5>
+                    </div>
+                </a>
+                <div class="panel-collapse collapse" id="selling-collapse-default" role="tabpanel" aria-labelledby="headerRootMenuSellingList">
+                    <div class="panel-body bg-color-eee padding-all-0">
+                        <ul class="list-unstyled heading-hover-item">
+                            <li class="padding-left-15 padding-right-15">
+                                <a class="plain sendGAEventClz" href="https://kmong.com/seller/selling_history" data-name="노란 헤더 - 드랍다운 메뉴 - 판매관리">
+                                    판매관리
+                                    <span class="new-alarm-active" style="display: none;">0</span>
+                                </a>
+                            </li>
+
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_gigs" data-name="노란 헤더 - 드랍다운 메뉴 - 나의 서비스">나의서비스</a></li>
+
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/seller/profits_history" data-name="노란 헤더 - 드랍다운 메뉴 - 수익관리">수익관리</a></li>
+
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_gigs/new" data-name="노란 헤더 - 드랍다운 메뉴 - 서비스 등록">서비스등록</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel border-none ">
+                <a class="plain sendGAEventClz" href="https://kmong.com/my_bookmarks" data-name="노란 헤더 - 드랍다운 메뉴 - 찜목록">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10">
+                        <h5 class="header-margin-none">
+                            찜목록
+                        </h5>
+                    </div>
+                </a>
+            </div>
+            <div class="panel border-none ">
+                <a class="plain sendGAEventClz" href="https://kmong.com/@lvxclmlawe_FosT8" data-name="노란 헤더 - 드랍다운 메뉴 - 프로필">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10">
+                        <h5 class="header-margin-none">
+                            프로필
+                        </h5>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="panel border-none ">
+                <a class="plain sendGAEventClz" onclick="sendGAEvent('clickEvent', 'referral_program', 'header');" href="https://kmong.com/referral_program" data-name="노란 헤더 - 드랍다운 메뉴 - 친구 초대">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10">
+                        <h5 class="header-margin-none">
+                            친구초대
+                        </h5>
+                    </div>
+                </a>
+            </div>
+            <div class="panel border-none margin-top-0">
+                <a class="plain collapsed" aria-expanded="false" aria-controls="collapseFour" href="#account-collapse-default" data-toggle="collapse" data-parent="#accordion">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10" id="headerRootMenuAuthList" role="tab">
+                        <h5 class="header-margin-none font-color-base">
+                            계정설정
+                            <span class="pull-right">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </h5>
+                    </div>
+                </a>
+                <div class="panel-collapse collapse" id="account-collapse-default" role="tabpanel" aria-labelledby="headerRootMenuAuthList">
+                    <div class="panel-body bg-color-eee padding-all-0">
+                        <ul class="list-unstyled heading-hover-item">
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_profile" data-name="노란 헤더 - 드랍다운 메뉴 - 나의정보">나의정보</a></li>
+
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_profile/certification" data-name="노란 헤더 - 드랍다운 메뉴 - 인증정보">인증정보</a></li>
+
+                            <li class="padding-left-15 padding-right-15"><a class="plain sendGAEventClz" href="https://kmong.com/my_profile/mail_settings" data-name="노란 헤더 - 드랍다운 메뉴 - 알림설정">알림설정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel border-none border-top-solid border-radius-top-none margin-top-0">
+                <a class="plain sendGAEventClz" href="https://kmong.com/logout" data-name="노란 헤더 - 드랍다운 메뉴 - 로그아웃">
+                    <div class="panel-heading border-radius-none header-root-dropdown-menu padding-left-15 padding-right-15 padding-bottom-10 padding-top-10">
+                        <h5 class="header-margin-none">
+                            로그아웃
+                        </h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>
+                  
+                                         <div class="bg-color-white border-bottom-solid" id="categoryHeader">
+                           <div class="container">
+                               <div class="row">
+                                   <div class="col-xs-12">
+                                       <ul class=" list-inline margin-none">
+                                                                                          <li class="header-list mypage-menu">
+        <h5 class="dropdown margin-top-5 margin-bottom-5">
+            <a class="plain" href="https://kmong.com/my_kmong">
+                마이크몽
+            </a>
+        </h5>
+    </li>
+
+    <li class="header-list mypage-menu dropdown">
+        <a class="plain dropdown-toggle padding-bottom-20" aria-expanded="true" aria-haspopup="true" href="javascript:void(0);" data-toggle="dropdown">
+            구매관리
+            <i class="fa fa-chevron-down chevron-down font-size-h6" aria-hidden="true"></i>
+        </a>
+        
+        <ul class="dropdown-menu border-top-category mypage-menu width-120px border-radius-0">
+            <li><a class="plain" href="https://kmong.com/my_orders">구매관리</a></li>
+            <li><a class="plain" href="https://kmong.com/my_charge">결제내역</a></li>
+            <li><a class="plain" href="https://kmong.com/kmong_cash_history">크몽캐시</a></li>
+            <li><a class="plain" href="https://kmong.com/do_charge">캐시충전</a></li>
+        </ul>
+    </li>
+
+    <li class="header-list mypage-menu dropdown">
+        <a class="plain dropdown-toggle padding-bottom-20" aria-expanded="true" aria-haspopup="true" href="javascript:void(0);" data-toggle="dropdown">
+            판매관리
+            <i class="fa fa-chevron-down chevron-down font-size-h6" aria-hidden="true"></i>
+        </a>
+
+        <ul class="dropdown-menu border-top-category mypage-menu width-120px border-radius-0">
+            <li><a class="plain padding-left-15 padding-right-15" href="https://kmong.com/seller/selling_history">판매관리</a></li>
+            <li><a class="plain padding-left-15 padding-right-15" href="https://kmong.com/my_gigs">나의서비스</a></li>
+            <li><a class="plain padding-left-15 padding-right-15" href="https://kmong.com/seller/profits_history">수익관리</a></li>
+            <li><a class="plain padding-left-15 padding-right-15" href="https://kmong.com/my_gigs/new">서비스등록</a></li>
+            <li><a class="plain padding-left-15 padding-right-15" href="https://kmong.com/seller/order_advertisement_gig">광고신청</a></li>
+        </ul>
+    </li>
+
+    <li class="header-list mypage-menu">
+        <h5 class="dropdown margin-top-5 margin-bottom-5">
+            <a class="plain" href="https://kmong.com/inbox">
+                메시지
+                 
+                                                </a>
+        </h5>
+    </li>
+
+    <li class="header-list mypage-menu">
+        <h5 class="dropdown margin-top-5 margin-bottom-5">
+            <a class="plain" href="https://kmong.com/my_profile">
+                계정설정
+            </a>
+        </h5>
+    </li>
+                                                                               </ul>
+                                </div>
+                            </div>
+                       </div>
+                                                            </div></nav>
+                    </header>
+
+<script src="/build/js/common-b8e57eb3f0.js"></script>
+<script src="/build/js/kmong-b69183f00e.js"></script>
+
+
+<div class="fake_global_body"></div>
+<div class="global-body chrome-download">
+
+    
+    <script>
+        var $globalBody = $('.global-body');
+                    sassVariables.globalMarginTop += parseInt(sassVariables.chromeDownloadHeight);
+            sassVariables.globalMarginTopOnlyYellowHeader += parseInt(sassVariables.chromeDownloadHeight);
+            $globalBody.addClass('chrome-download');
+                
+
+
+        if($('#penaltyDetailBanner').length > 0){
+            $('#kmongNavBar').css('margin-top',$('#penaltyDetailBanner').height() + 'px');
+            $('#penaltyDetailBanner').css({
+                'position' : 'fixed',
+                'top' : 0,
+                'z-index' : 100
+            });
+        }
+        
+        
+                
+
+    </script>
+    
+
+    <div class="container position-relative">
+        <div id="fixedEmtyBox" style="width: 110%; height: 0.1px; display: none;"></div>
+    <div class="inline-block text-center kmong-quick-menu" id="quickMenuFixed">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="kmong-quick-menu-wrap fixed">
+            <div class="panel panel-default margin-bottom-10">
+                <div class="panel-body padding-all-15">
+                                                                <div class="row margin-bottom-15">
+                            <div class="col-xs-12">
+                                <div class="padding-bottom-15 border-bottom-solid">
+                                    <a class="plain font-color-lighter cursor sendGAEventClz" onclick="sendGAEvent('quickMenu', '구매방법', '/my_profile/leave');" data-toggle="modal" data-name="퀵 메뉴 - 구매방법" data-target="#kmongManual">
+                                        <img class="width-20px" src="/img/quick_menu/ic_kmong_how.png">
+                                        <div class="margin-top-5">구매방법</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="row">
+                        <div class="col-xs-12">
+                            <nav id="kmongNotificationMenuDiv">
+    <div class="row position-relative margin-none">
+        <div class="col-xs-12 padding-all-0 position-relative text-center cursor sendGAEventClz" onclick="sendGAEvent('quickMenu', '크몽안내', kmongCurrentPath);" data-name="퀵 메뉴 - 크몽안내">
+            <div>
+               
+                <img class="width-25px" src="/img/quick_menu/ic_FAQ.png">
+                <img class="width-25px hidden" src="/img/quick_menu/ic_FAQ_active.png">
+
+
+            </div>
+            <h6 class="margin-none font-color-lighter margin-top-5" style="font-size: 10px !important;">
+                크몽안내
+            </h6>
+
+            <div class="position-absolute kmong-KB-notification-menu-unread-count cursor" style="display: none;">
+                <span class="bg-color-count-red color-white border-round font-size-h6">0</span>
+            </div>
+        </div>
+        <div class="kmong-KB-message-box cursor" style="display: none;">
+            <div class="bg-color-light-yellow word-break kmong-KB-unread-notification-body NGB card-font-size-small">
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="bg-color-fa border-left kmong-KB text-left font-size-h5" id="kmongKnowledgeBase" style="height: 442px; display: none;">
+    <div class="carousel slide" id="kmongKnowledgeBaseCarousel" data-interval="false" data-ride="carousel">
+        <div class="row margin-left-0 margin-right-0 kmong-KB-nav-shadow">
+            <div class="col-xs-11 padding-left-0 padding-right-0">
+                <ul class="nav text-center bg-color-white kmong-KB-nav" role="tablist">
+                                            <li class="kmongKBNav col-xs-6 active" role="presentation"><a class="font-color-lighter font-size-h4" id="kmongFAQLink" role="tab" aria-controls="home" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);" href="#kmongFAQ" data-toggle="tab">자주 묻는 질문</a></li>
+                        <li class="kmongKBNav col-xs-6" role="presentation"><a class="font-color-lighter font-size-h4" id="kmongHelpCenterLink" role="tab" aria-controls="profile" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);" href="#kmongHelpCenter" data-toggle="tab">크몽 고객센터</a></li>
+                                    </ul>
+            </div>
+            <div class="col-xs-1 bg-color-white text-right padding-bottom-10 padding-left-0 cursor" style="margin-top: 11px;">
+                <i class="fa fa-close color-gray-d1 font-size-20"></i>
+            </div>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            
+            <div class="item active kmong-KB-menu" style="height: 442px;" data-index="0">
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kbCategoryBody" style="height: 402px;">
+                    <div class="col-xs-12 padding-left-0 padding-right-0">
+                        <div class="tab-content">
+                            <div class="kmongKBTab tab-pane position-relative active" id="kmongFAQ" role="tabpanel">
+                                <div class="padding-left-15 padding-right-15">
+                                    <div id="kbCategoryHeader">
+                                        <div class="font-size-20 NGB margin-top-30">문의 전 확인</div>
+                                        <h5 class="margin-top-5">아래 검색창을 통해 원하시는 답변을 빠르게 찾아 보실 수 있습니다.</h5>
+                                    </div>
+                                    <div class="form-group input-text-group margin-top-30">
+                                        <span class="twitter-typeahead" style="display: inline-block; position: relative;"><input class="form-control padding-left-30 input-sm text-left-imp kb_search_bar border-radius-0 tt-input" style="vertical-align: top; position: relative;" dir="auto" spellcheck="false" type="text" placeholder="검색어를 입력해주세요" autocomplete="off"><pre aria-hidden="true" style='text-transform: none; text-indent: 0px; letter-spacing: 0px; font-family: "NotoSansKR Regular"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; white-space: pre; visibility: hidden; position: absolute;'></pre><div class="tt-menu" style="left: 0px; top: 100%; display: none; position: absolute; z-index: 100;"><div class="list-group margin-none margin-none-0"></div></div></span>
+                                        <div class="kmong-KB-search-icon">
+                                            <i class="fa fa-search font-color-lighter" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="inline-block kb-category-close cursor" style="display: none;">
+                                            <span>
+                                                <i class="fa fa-times font-color-lighter" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="panel-group margin-none border-radius-none margin-top-30" id="kbCategoryAccordion" role="tablist" aria-multiselectable="true">
+                                    
+
+                                    <div class="row margin-left-0 margin-right-0 bg-color-white padding-top-15 padding-bottom-15 border-top-solid" style="display: none;">
+                                        <div class="col-xs-12 padding-right-0 padding-left-20 text-left">
+                                            <h5 class="margin-top-0 font-color-lighter">원하는 결과를 찾지 못했나요?</h5>
+                                            <button class="btn btn-primary padding-top-10 padding-bottom-10 padding-left-15 padding-left-15" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);$('#kmongHelpCenterLink').trigger('click');$('#kbCategoryBody').scrollTop(0);">크몽 고객센터</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-unstyled overflow-y margin-none padding-left-15 position-relative" id="kbCategoryQueryBody" style="display: none;">
+                                    
+
+                                    <li class="border-bottom-solid padding-bottom-15 padding-top-15 bg-color-transparent border-radius-none kmong-kb-search cursor padding-left-0 padding-right-0">
+                                        <h5 class="margin-top-0 font-color-lighter">원하는 결과를 찾지 못했나요?</h5>
+                                        <button class="btn btn-primary padding-top-10 padding-bottom-10 padding-left-15 padding-left-15" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);$('#kmongHelpCenterLink').trigger('click');$('#kbCategoryBody').scrollTop(0);">크몽 고객센터</button>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="kmongKBTab tab-pane kmong-KB-menu-margin-adjust" id="kmongHelpCenter" role="tabpanel">
+                                <div class="row margin-none bg-color-fa">
+                                    <div class="col-xs-12 padding-right-15 padding-left-15">
+                                        <div class="font-size-20 NGB margin-top-30">안녕하세요, 크몽 고객센터입니다.</div>
+                                        <h5 class="line-height margin-top-5">문의 내용을 상세히 작성하여 보내주시면, 입력된 이메일 주소를 통해 빠르게 답변해드리도록 하겠습니다. </h5>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none">
+                                    <div class="col-xs-12 padding-all-20">
+                                        <h6 class="font-color-lighter">이메일</h6>
+                                        <div class="form-group margin-bottom-10" id="helpCenter_from_email">
+                                            <input class="form-control input-sm" type="text" placeholder="이메일">
+                                            <span class="help-block padding-left-0" id="helpCenter_from_email_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;이메일을 입력해주세요.</span>
+                                        </div>
+
+                                        <div class="form-group margin-bottom-10" id="helpCenter_title">
+                                            <h6 class="margin-top-15 font-color-lighter">제목</h6>
+                                            <div class="form-group input-text-group">
+                                                <span class="input-inner-text-sm-no-label bg-color-white padding-left-5 color-primary cursor" style="display: none; pointer-events: auto;" onclick="$('#related_kb').toggle();">                                                    관련 답변들(0개)                                                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                                </span>
+                                                <input class="form-control input-sm text-left-imp" type="search" placeholder="제목을 작성해주세요.">
+                                            </div>
+                                            <span class="help-block padding-left-0" id="helpCenter_title_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;제목을 입력해주세요.</span>
+                                        </div>
+
+                                        <ul class="list-group overflow-y margin-none" id="related_kb" style="display: none;">
+                                            
+                                            <li class="list-group-item border-radius-none bg-color-gray border-top-none text-right" style="display: none;" onclick="$('#kmongFAQLink').trigger('click');">
+                                                <span class="cursor font-color-lighter font-size-h6">
+                                                    관련문의더보기
+                                                </span>
+                                            </li>
+                                        </ul>
+
+
+                                        <div class="form-group margin-all-0" id="helpCenter_body">
+                                            <h6 class="margin-top-15 font-color-lighter">내용</h6>
+                                            <textarea class="form-control border-radius-bottom-none" placeholder="문의 내용을 작성해주세요." rows="7">문의 내용을 작성해주세요.</textarea>
+                                            <span class="help-block padding-left-0" id="helpCenter_body_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;내용을 입력해주세요.</span>
+                                        </div>
+
+
+                                        <div class="border-solid border-top-none padding-all-10">
+                                            <div class="row dropzone-preview-helpcenter margin-top-5"></div>
+                                            <a class="btn btn-default sendBtn btn-xs dz-clickable" id="dropzoneFileHelp">파일첨부</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none">
+                                    <div class="col-xs-12 padding-left-20 padding-right-20">
+                                        <a class="btn btn-primary btn-sm btn-block" id="sendHelpCenterForm">문의하기</a>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none margin-top-10">
+                                    <div class="col-xs-12">
+                                        <ul class="font-size-h6 font-color-lighter padding-left-25">
+                                            <li>주말·공휴일은 답변이 늦어질 수 있습니다.</li>
+                                            <li>파일첨부는 최대 4개까지 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kmongKBTab tab-pane kmong-KB-menu-margin-adjust" id="kmongNotifications" role="tabpanel">
+                                <ul class="list-group">
+                                    
+                                </ul>
+
+                                <div class="row margin-left-0 margin-right-0" id="kmongNotificationLoadingDiv" style="display: none;">
+                                    <div class="col-xs-12 padding-all-20 text-center margin-top-50">
+                                        <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                                        <h5>불러오는 중</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="item bg-color-fa kmong-KB-menu kmong-KB-menu-margin-adjust" style="height: 442px;" data-index="1">
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kmongNotificationDetailBody" style="height: 347px; display: none;">
+                    <div class="col-xs-12 padding-left-0 padding-right-0">
+                        <ul class="nav kmong-KB-nav" role="tablist">
+                            <li class="col-xs-12 cursor font-color-lighter padding-top-30 padding-bottom-30" role="presentation" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);">
+                                <span class="padding-left-15">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    안내 목록 보기
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 padding-left-20 padding-right-20 padding-bottom-20">
+                        <h5 class="font-color-lighter"></h5>
+                        
+
+                        
+
+                        
+                    </div>
+                </div>
+
+                <div class="row margin-left-0 margin-right-0 bg-color-black padding-top-15 padding-bottom-15 kmong-KB-footer" id="kmongNotificationDetailFooter">
+                    <div class="col-xs-6 padding-right-0 padding-left-20 text-left">
+                        <a class="plain-color-white" id="kmongNotificationPrevBtn" href="javascript:void(0)"> 이전</a>
+                    </div>
+                    <div class="col-xs-6 padding-left-0  padding-right-20 text-right">
+                        <a class="plain-color-white" id="kmongNotificationNextBtn" href="javascript:void(0)">다음 </a>
+                    </div>
+                </div>
+
+
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kmongNotificationDetailLoadingBody" style="height: 402px;">
+                    <div class="col-xs-12 padding-all-20 text-center margin-top-50">
+                        <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                        <h5>불러오는 중</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg-color-fa overflow-y kmong-KB-menu kmong-KB-menu-margin-adjust" style="height: 442px;" data-index="2">
+                <div class="row margin-left-0 margin-right-0">
+                    <div class="col-xs-11 padding-left-15 padding-right-0">
+                        <ul class="nav kmong-KB-nav" role="tablist">
+                            <li class="col-xs-12 cursor padding-top-20 padding-bottom-20" role="presentation" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);">
+                                <i class="fa fa-arrow-left color-gray-d1" aria-hidden="true"></i>&nbsp;
+                                <span class="font-color-lighter">                                                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row margin-left-0 margin-right-0">
+                    <div class="col-xs-12 padding-left-15 padding-right-15">
+                        <div class="font-size-20 NGB margin-bottom-15 kmong-kb-images-size">                                                    </div>
+                        <div class="knowledgeBaseDetailContent font-size-h5 text-justify style-style padding-bottom-40"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function clickKBCategoryHeader(index){
+        $('#kbCategoryBody').animate({scrollTop: 49 + 30 + 40 + 30 + 30 + (index * 57)});
+    }
+</script>
+
+<style>
+    .knowledgeBaseDetailContent p {
+        margin-bottom:0;
+    }
+
+    .knowledgeBaseDetailContent > img {
+        width: 100%;
+    }
+
+    .twitter-typeahead {
+        width: 100%;
+    }
+    .tt-menu {
+        width: 100%;
+        border-top: 2px solid #ffd400;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+    }
+    .tt-cursor:hover,
+    .tt-cursor:focus,
+    .tt-cursor{
+        color: #F49165 !important;
+        cursor: pointer;
+    }
+    .kmong-kb-search{
+        color: #666;
+    }
+    .kmong-kb-search:focus,
+    .kmong-kb-search:hover{
+        color: #F49165;
+    }
+
+    .kmong-kb-search span{
+        color: #888;
+    }
+    .kmong-kb-search:focus span,
+    .kmong-kb-search:hover span{
+        color: #444 !important;
+    }
+</style>
+<!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/typeahead.js/0.11.1/typeahead.jquery.min.js"></script>
+<script src="/js/dropzone.js"></script>
+
+
+<script>
+    function openToggleFindPassword() {
+        var $subFindPasswordDiv = $('#subFindPasswordDiv');
+        if($subFindPasswordDiv.length > 0) {
+            if($subFindPasswordDiv.is(':visible')) {
+                $subFindPasswordDiv.fadeOut();
+            } else {
+                $subFindPasswordDiv.fadeIn();
+            }
+        } else {
+            var content = '';
+            if(master_vue.knowledge_bases.length > 0) {
+                for(var i in master_vue.knowledge_bases) {
+                    var knowledgeBase = master_vue.knowledge_bases[i];
+                    if(typeof knowledgeBase !== 'undefined' && typeof knowledgeBase.kb !== 'undefined') {
+                        if(knowledgeBase.kb.length > 0) {
+                            for(var j in knowledgeBase.kb) {
+                                if(knowledgeBase.kb[j].id == 116) {
+                                    content = knowledgeBase.kb[j].content;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            $('#findPasswordToggleLink').parent().append('<div id="subFindPasswordDiv" class="padding-left-30 margin-top-10">' + content + '</div>')
+        }
+    }
+</script>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quickMenuTop">
+                <a class="plain font-size-h6 font-color-light sendGAEventClz" href="javascript:void(0);" data-name="퀵 메뉴 - TOP">
+                <span>TOP</span>
+                    <img class="width-10px position-relative" style="top: -1px;" src="/img/quick_menu/ic_quick_top.png">
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+    <style>
+        @media(min-width: 1800px) {
+            .marchEventFloatingBanner {
+                right: 13% !important;
+            }
+        }
+    </style>
+
+    
+
+    <script>
+        /**
+         * 다시 안보기 기능 혹시 사용할경우 다시 오픈
+         */
+//        var hideEventFloatingBanner = localStorage.getItem('hideEventFloatingBanner');
+//
+//        if(hideEventFloatingBanner == null) {
+//            localStorage.setItem('hideEventFloatingBanner', false);
+//            hideEventFloatingBanner = 'false';
+//        }
+//
+//        if(hideEventFloatingBanner == 'true') {
+//            $('.marchEventFloatingBanner').hide();
+//        }
+
+
+        $('.marchEventFloatingBanner').hide();
+
+        $(document).ready(function () {
+            $('.marchEventFloatingBanner').fadeIn(400);
+        });
+
+
+        $('.eventCancel').click(function () {
+            localStorage.setItem('hideEventFloatingBanner', true);
+            $('.marchEventFloatingBanner').hide();
+        })
+    </script>
+
+    
+    <div class="container">
+        <div class="row margin-top-30">
+            <div class="col-xs-2">
+                <div class="row">
+                    <div class="col-xs-12 padding-left-0">
+                        <h2 class="margin-none NGB">계정설정</h2>
+                    </div>
+                </div>
+                <div class="row margin-top-10">
+                    <div class="col-xs-12 padding-right-0 padding-left-0">
+                        <style>
+    body {
+        background: #fafafa !important;
+        font-size: 14px;
+    }
+
+    .font-size-h1, h1 {
+        font-size: 22px !important;
+    }
+
+    .font-size-h2, h2 {
+        font-size: 20px !important;
+    }
+
+    .font-size-h3, h3 {
+        font-size: 18px !important;
+    }
+
+    .font-size-h4, h4 {
+        font-size: 16px !important;
+    }
+
+    .font-size-h5, h5 {
+        font-size: 14px !important;
+    }
+
+    .font-size-h6, h6 {
+        font-size: 12px !important;
+    }
+
+    .card-font-size-default, p {
+        font-size: 13px !important;
+    }
+
+    .card-font-size-small {
+        font-size: 11px !important;
+    }
+
+    .panel,
+    .panel-heading,
+    .form-control{
+        border-radius: 0;
+    }
+
+    .border-radius-none {
+        border-radius: 0 !important;
+    }
+
+    .border-radius{
+        border-radius: 4px !important;
+    }
+
+    .modal-content {
+        border-radius: 0 !important;
+        border: none !important;
+    }
+</style>
+<ul class="my-profile-menu-list list-style-none font-size-h4" role="tablist">
+    <li class="margin-right-30 position-relative " role="presentation">
+        <a class="plain font-color-lighter" href="https://kmong.com/my_profile">나의정보</a>
+    </li>
+
+    <li class="margin-right-30 position-relative " role="presentation">
+        <a class="plain font-color-lighter" href="https://kmong.com/my_profile/certification">인증정보</a>
+    </li>
+
+    <li class="margin-right-30 position-relative " role="presentation">
+        <a class="plain font-color-lighter" href="https://kmong.com/my_profile/mail_settings">알림설정</a>
+    </li>
+
+    <li class="margin-right-30 position-relative " role="presentation">
+        <a class="plain font-color-lighter" href="https://kmong.com/my_profile/change_password">비밀번호 변경</a>
+    </li>
+
+    <li class="margin-right-30 position-relative  active " role="presentation">
+        <a class="plain font-color-lighter" href="https://kmong.com/my_profile/leave">회원탈퇴</a>
+    </li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <!--회원탈퇴하기 변경 시작-->
+                <form id="leaveMemberForm" action="https://kmong.com/authentic/leave" method="POST" accept-charset="UTF-8"><input name="_token" type="hidden" value="bJcG0S5zWKZLeLb8Q0Zuffm5rvMTdLqsIMPZNDqw">
+                <input name="type" type="hidden" value="leave">
+                <div class="row">
+                    <div class="panel panel-default margin-none border-radius-0">
+                        <div class="panel-body padding-all-30">
+                            <div class="row leave-border-bottom">
+                                <div class="col-xs-12">
+                                    <h4 class="margin-none line-panel padding-bottom-5 NGB">탈퇴사유</h4>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-12">
+                                    <div class="awesome-radio">
+                                        <label>
+                                            <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="다른 계정이름으로 사용하기 위해서">
+                                            <span class="awesome-radio-body padding-left-0"></span>
+                                            <div class="awesome-radio-text">
+                                                다른 계정이름으로 사용하기 위해서
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="awesome-radio margin-top-10">
+                                        <label>
+                                            <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="사용빈도가 낮고, 개인정보 유출이 우려되서">
+                                            <span class="awesome-radio-body padding-left-0"></span>
+                                            <div class="awesome-radio-text">
+                                                사용빈도가 낮고, 개인정보 유출이 우려되서
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="awesome-radio margin-top-10">
+                                        <label>
+                                            <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="사이트 이용시 장애가 많아서">
+                                            <span class="awesome-radio-body padding-left-0"></span>
+                                            <div class="awesome-radio-text">
+                                                사이트 이용시 장애가 많아서
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="awesome-radio margin-top-10">
+                                        <label>
+                                            <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="서비스의 질에 대한 불만이 있어서">
+                                            <span class="awesome-radio-body padding-left-0"></span>
+                                            <div class="awesome-radio-text">
+                                                서비스의 질에 대한 불만이 있어서
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="awesome-radio margin-top-10">
+                                        <label>
+                                            <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="사이트 이용시 고객응대가 나빠서">
+                                            <span class="awesome-radio-body padding-left-0"></span>
+                                            <div class="awesome-radio-text">
+                                                사이트 이용시 고객응대가 나빠서
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group margin-top-10">
+                                        <div class="row">
+                                            <div class="col-xs-2">
+                                                <div class="awesome-radio">
+                                                    <label>
+                                                        <input name="because" class="margin-top-0 vertical-align-middle" type="radio" value="etc">
+                                                        <span class="awesome-radio-body padding-left-0"></span>
+                                                        <div class="awesome-radio-text">기타</div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row margin-top-5" style="display: none;">
+                                            <div class="col-xs-12 padding-left-30">
+                                                <input name="because_etc" class="form-control input-sm" type="text" placeholder="직접입력">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-30">
+                                <div class="col-xs-12 padding-right-0">
+                                    <h4 class="margin-none line-panel padding-bottom-5 NGB">이메일 확인</h4>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-12">
+                                    <h5 class="margin-none">이메일 주소</h5>
+                                    <div class="form-group margin-top-5">
+                                        <input name="email" class="form-control input-sm" id="email" required="" type="text" placeholder="크몽에 가입하신 이메일을 적어주세요">
+                                        <h5 class="font-color-lighter line-height">
+                                            * 무상으로 지급된 크몽캐시는 탈퇴와 함께 자동 소멸됩니다. <br>
+                                            환불 가능한 <a class="link-color-blue text-underline NGB" href="https://kmong.com/kmong_cash_history">크몽캐시</a>가 있을 경우, 고객센터를 통해 환불 받으실 수 있습니다.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-30">
+                    <div class="col-xs-12 text-right padding-right-0">
+                        <a class="btn btn-primary padding-left-45 padding-right-45" onclick="leaveMemberBeforeCheck()" href="javascript:void(0);">회원 탈퇴</a>
+                    </div>
+                </div>
+                </form>
+                <!--회원탈퇴하기 변경 끝-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function leaveMemberBeforeCheck(){
+            var isSelectedReason = false;
+            $('input[name=because]').each(function(i,item){
+                if($(this).is(':checked')){
+                    isSelectedReason = true;
+                }
+            });
+
+            if($('#email').val() != '' && isSelectedReason == true) {
+                var buyerMileage = '0';
+                var sellerMileage = '0';
+
+                if(buyerMileage > 0 || sellerMileage > 0) {
+                    var text = "크몽 탈퇴 시, 무상 지급된";
+
+                    if(buyerMileage > 0) {
+                        text += '<br/>크몽 캐시: ' + buyerMileage.format() + '원'
+                    }
+
+                    if(sellerMileage > 0) {
+                        text += '<br/>전문가 마일리지: ' + sellerMileage.format() + '원'
+                    }
+                    text += '<br/>자동 소멸됩니다. 탈퇴하시겠습니까 ? ';
+
+                    swal({
+                            title: "탈퇴 전 주의사항",
+                            text: text,
+                            type: "warning",
+                            showCancelButton: true,
+                            html: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "아니요",
+                            cancelButtonText: "예",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
+                        function(isConfirm){
+                            if (isConfirm) {
+                                swal.close()
+                            } else {
+                                $('#leaveMemberForm').submit();
+                            }
+                        });
+                } else {
+                    $('#leaveMemberForm').submit();
+                }
+            }
+
+
+        }
+
+        $(document).ready(function () {
+            $('#leaveBecauseInputChecked').on('click', function () {
+               $('#leaveBecauseInput').slideToggle('fast');
+            });
+        });
+    </script>
+</div>
+
+<div tabindex="-1" class="modal fade" id="kmongManual" role="dialog" aria-hidden="false" aria-labelledby="myModal">
+    <div class="modal-dialog manual_modal modal-position" style="width: 640px;">
+        <div class="modal-content">
+            <div class="container" style="width: 100% !important;">
+                <div class="row">
+                    <div class="col-xs-12 text-center padding-top-30">
+                        <h2 class="color-black"><b>초간단 구매방법</b></h2>
+                        <button class="close kmong-how-close" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                        <h3 class="margin-top-5 color-dark-gray">서비스를 상품처럼 사고팔 수 있는 곳, 크몽</h3>
+                    </div>
+                </div>
+                <div class="row padding-right-80 padding-left-80 margin-top-30 margin-bottom-50">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="전문가찾기" src="/img/kmong_how/1.png"> 
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>01</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>'카테고리 선택'</b> 또는 <b>'검색창'</b>을 통해 전문가를 찾아보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="서비스 설명보기" src="/img/kmong_how/2.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>02</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">제공 <b>서비스에 대한 설명과 가격</b> 등을 꼼꼼히 살펴보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="견적문의" src="/img/kmong_how/3.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>03</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>크몽 메세지</b>를 통해 전문가에게<b> 견적을 문의</b>해보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="구매버튼 클릭" src="/img/kmong_how/4.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>04</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">구매버튼을 클릭하여 구매를 완료하세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="작업물 확인" src="/img/kmong_how/5.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>05</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">전문가와 대화하며 최상의 작업물을 받아보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="전문가 평가" src="/img/kmong_how/6.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>06</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>전문가를 평가</b>해주세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="kmong-nps container bg-color-white border-solid border-radius margin-bottom-0 padding-all-0 work-before-box" id="netPromoterScoreBody" style="display: none;">
+    <div class="padding-all-15" style="display: none;">
+        <div class="row" id="netPromoterScoreCloseBtn">
+            <div class="col-xs-12">
+                <button class="close cancel-close font-size-h4" style="top: -5px !important;" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+            </div>
+        </div>
+        <div class="row margin-top-10">
+            <div class="col-xs-12">
+                <h5 class="margin-top-0 NGB line-height text-center">
+                    현재 이용하시는 크몽 사이트를 <br>
+                    다른 사람들에게 추천할 의향이 얼마나 되십니까?
+                </h5>
+            </div>
+        </div>
+        <div class="row margin-top-20">
+            <div class="col-xs-12">
+                <div class="kmong-nps-graduration margin-none font-color-lighter width-100 position-relative">
+                    <div><span>0</span></div>
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                    <div><span>5</span></div>
+                    <div><span>6</span></div>
+                    <div><span>7</span></div>
+                    <div><span>8</span></div>
+                    <div>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                </div>
+                <div class="slider slider-horizontal" id="netPromoterScoreSlider"><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="width: 100%; right: 0px;"></div></div><div class="tooltip tooltip-main top hide" role="presentation" style="left: 0%; margin-left: 0px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top hide" role="presentation"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top hide" role="presentation"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div tabindex="0" class="slider-handle min-slider-handle round" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10" style="left: 0%; display: none;"></div><div tabindex="0" class="slider-handle max-slider-handle round hide" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10" style="left: 0%; display: none;"></div></div><input id="netPromoterScore" style="display: none;" type="text" value="0" data-slider-step="1" data-slider-max="10" data-slider-min="0" data-slider-id="netPromoterScoreSlider" data-value="0">
+            </div>
+        </div>
+        <div class="row font-color-lighter margin-bottom-20">
+            <div class="col-xs-6">
+                <h6 class="margin-none">추천하지 않음</h6>
+            </div>
+            <div class="col-xs-6 text-right">
+                <h6 class="margin-none">추천함</h6>
+            </div>
+        </div>
+        <div class="row" id="netPromoterScoreQuestionBtn" style="display: none;">
+            <div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="1">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            서비스로의 접근 용이성                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="2">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            전문가의 서비스 퀄리티                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="3">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            서비스 품질 대비 가격의 합리성                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="4">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            웹사이트 이용 편의성                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="5">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            전문가의 응답 속도                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="6">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            크몽의 고객 응대                        </span>
+                    </label>
+                </div>
+            </div><div class="col-xs-12 padding-left-25 margin-top-5">
+                <div class="awesome-radio">
+                    <label>
+                        <input name="question" class="nps-checked" type="radio" value="7">
+                        <span class="awesome-radio-body"></span>
+                        <span class="awesome-radio-text card-font-size-default">                            기타                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="netPromoterScoreMessageBody" style="display: none;">
+            <div class="row margin-top-20">
+                <div class="col-xs-12">
+                    <div class="kmong-nps-control">
+                        <textarea class="form-control margin-bottom-5" id="netPromoterScoreMessage" placeholder="이러한 점수를 준 주된 이유를 작성해주세요!">이러한 점수를 준 주된 이유를 작성해주세요!</textarea>
+                        <span class="padding-left-0 help-block" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;사유는 필수입니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top-5">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <button class="btn btn-primary btn-xss btn-block" id="sendNetPromoterScoreBtn">보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div style="display: none;">
+        <div class="kmong-nps-finish position-relative">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="close cancel-close font-size-h4 opacity-1 text-shadow-none font-color-light" style="top: 7px !important; right: 22px;" aria-label="Close" onclick="hideNetPromoterScoreBody()" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+            </div>
+            <div class="kmong-nps-finish-bg text-center">
+                <div class="kmong-nps-finish-img margin-top-40">
+                    <img class="width-100" src="/img/kmong_nps/kmong_nps.png">
+                </div>
+            </div>
+        </div>
+        <div class="padding-all-15">
+            <div class="row">
+                <div class="col-xs-12 padding-top-50 padding-bottom-20">
+                    <h3 class="NGB line-height text-center">
+                        평가를 남겨주셔서 <br>
+                        감사합니다!
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // With JQuer
+
+        $('#netPromoterScore').slider({
+            tooltip : 'hide',
+            value: 0
+        });
+
+
+        $('.slider-handle').hide();
+
+        $('#netPromoterScoreSlider').click(function(){
+            if($('#netPromoterScore').val() == 0) {
+                master_vue.netPromoterScore.score = 0;
+            }
+        });
+
+        master_vue.netPromoterScoreQuestions = [{"id":1,"name":"\uc11c\ube44\uc2a4\ub85c\uc758 \uc811\uadfc \uc6a9\uc774\uc131"},{"id":2,"name":"\uc804\ubb38\uac00\uc758 \uc11c\ube44\uc2a4 \ud004\ub9ac\ud2f0"},{"id":3,"name":"\uc11c\ube44\uc2a4 \ud488\uc9c8 \ub300\ube44 \uac00\uaca9\uc758 \ud569\ub9ac\uc131"},{"id":4,"name":"\uc6f9\uc0ac\uc774\ud2b8 \uc774\uc6a9 \ud3b8\uc758\uc131"},{"id":5,"name":"\uc804\ubb38\uac00\uc758 \uc751\ub2f5 \uc18d\ub3c4"},{"id":6,"name":"\ud06c\ubabd\uc758 \uace0\uac1d \uc751\ub300"},{"id":7,"name":"\uae30\ud0c0"}];
+    });
+
+
+
+    function hideNetPromoterScoreBody() {
+        $('#netPromoterScoreBody').slideUp(function(){
+            master_vue.isShowNetPromoterScoreSurvey = -1;
+        })
+    }
+</script>
+
+    <footer class="footer-body  margin-top-30 ">
+    <div class="bg-color-fa border-top-solid border-bottom-solid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <ul class="list-inline text-center font-color-lighter margin-top-5 margin-bottom-5 font-size-h6">
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick="" href="https://kmong.com/about/kmong_is">크몽팀</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick="" href="https://kmong.com/about/service">서비스소개</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick="" href="https://kmong.com/about/recruit">인재채용</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick="" href="https://kmong.com/terms_of_service">이용약관</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick="" href="https://kmong.com/privacy_policy">개인정보취급방침</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="plain font-color-lighter font-size-h6" onclick=" master_vue.openKmongKB();$('#kmongFAQLink').trigger('click');" href="javascript:void(0);">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padding-bottom-30 padding-top-20 bg-color-white ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12padding-bottom-20 padding-right-0 padding-left-0">
+                    <div class="col-xs-9">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4>
+                                    <b>공지사항</b>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="list-unstyled">
+                                                                            <li class="padding-top-5 padding-bottom-5 padding-left-0 padding-right-0">
+                                            <a class="plain color-dark-gray" href="http://kmongteam.blog.me/221202310949" target="_blank">
+                                                - 크몽앱 전화상담 이용방법 안내
+                                                                                                    <span class="color-dark-yellow-400 padding-left-5">NEW</span>
+                                                                                            </a>
+                                        </li>
+                                                                            <li class="padding-top-5 padding-bottom-5 padding-left-0 padding-right-0">
+                                            <a class="plain color-dark-gray" href="http://kmongteam.blog.me/221191685719" target="_blank">
+                                                - 법률 관련 서비스 개편
+                                                                                            </a>
+                                        </li>
+                                                                            <li class="padding-top-5 padding-bottom-5 padding-left-0 padding-right-0">
+                                            <a class="plain color-dark-gray" href="https://kmongteam.blog.me/221171520968" target="_blank">
+                                                - 앱 전화상담 기능 도입 안내
+                                                                                            </a>
+                                        </li>
+                                                                            <li class="padding-top-5 padding-bottom-5 padding-left-0 padding-right-0">
+                                            <a class="plain color-dark-gray" href="http://kmongteam.blog.me/221171267788" target="_blank">
+                                                - 상담&amp;노하우, 컨설팅 카테고리 재편 안내
+                                                                                            </a>
+                                        </li>
+                                                                            <li class="padding-top-5 padding-bottom-5 padding-left-0 padding-right-0">
+                                            <a class="plain color-dark-gray" href="http://kmongteam.blog.me/221085398076" target="_blank">
+                                                - 전문가 서비스 등록 시 동영상 업로드 방법 변경 안내
+                                                                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pull-right inline-block padding-left-60">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4 class="margin-none pull-left">
+                                    <b>고객센터</b>
+                                </h4>
+                                <a class="font-size-h6 color-primary text-underline pull-right" href="https://kmong.com/report_direct">
+                                    &nbsp;직거래/불법홍보 신고
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row margin-top-5 margin-bottom-5 text-center">
+                            <div class="col-xs-12">
+                                                                    <a class="plain" onclick="sweetalertByType('크몽은 [통신판매중개사이트] 입니다.', '판매 중인 서비스에 대한 작업의뢰/견적요청 등의<br/>문의는 해당 서비스 전문가에게 직접 부탁드립니다 :D<br/><br/>크몽 고객센터: 1544-6254', 'info', 'button'); sendGAEvent('clickEvent', 'main', '전화번호 확인 기타');" href="javascript:void(0);">
+                                        <div class="margin-top-0 font-size-h1" style="letter-spacing: 4px; font-size: 22px !important;">
+                                            <img class="width-20px" alt="전화아이콘" src="/img/main/desktop/bottom/ic-phone.png">
+                                            <b>전화번호확인</b>
+                                        </div>
+                                    </a>
+                                                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a class="btn btn-black btn-block btn-xss NGL" href="javascript:void(0);" target="_blank">
+                                    전화전 클릭
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row margin-top-10">
+                            <div class="col-xs-12">
+                                <h5 class="margin-none text-style text-right font-color-lighter">
+                                    <strong class="font-color-light">
+                                        상담시간 :&nbsp;<span style="letter-spacing: 0.1px;">평일 10:00 ~ 18:00</span>
+                                    </strong> <br>
+                                    <span class="font-color-light">* 토요일 및 공휴일 휴무</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-center border-solid margin-top-10 margin-bottom-10 bg-color-fa padding-top-10 padding-bottom-10">
+                        <h6 class="line-height" style="letter-spacing: 0px;">
+                            <strong>크몽은 통신판매중개자이며 통신판매 당사자가 아닙니다. 따라서 서비스 관련 문의는 해당 전문가에게 해주시기 바랍니다.</strong> <br>
+                            (주)크몽의 사전 서면 동의 없이 크몽사이트의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top-20">
+                <div class="col-xs-10">
+                    <div>
+                        <ul class="list-inline font-color-light font-size-h6 margin-bottom-5">
+                            <li>
+                                <b>회사명</b> : (주)크몽
+                            </li>
+
+                            <li>|</li>
+
+                            <li>
+                                <b>주소</b> : 서울시 강남구 역삼로 17길 51, 4층
+                            </li>
+
+                            <li>|</li>
+
+                            <li>
+                                <b>대표</b> : 박현호
+                            </li>
+
+                            <li>|</li>
+
+                            <li>
+                                <b>개인정보관리책임자</b> : 서동진
+                            </li>
+
+                            <li>
+                                <ul class="list-inline">
+                                    <li>
+                                        <b>사업자등록번호</b> : 613-81-65278
+                                    </li>
+
+                                    <li>|</li>
+
+                                    <li>
+                                        <b>통신판매업신고</b> : 2014-서울강남-01471호
+                                    </li>
+
+                                    <li>|</li>
+
+                                                                            <li><b>전화번호</b> : 1544-6254</li>
+                                        <li>|</li>
+                                    
+                                    <li>
+                                        <b>이메일</b> : <a class="plain font-color-light" href="mailto:help@kmong.com">help@kmong.com</a>
+                                    </li>
+                                </ul>
+                                <h6 class="margin-top-5 margin-bottom-0 color-dark-gray" id="kmongCopyRight">Copyright © 2018 Kmong Inc. All rights reserved.</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-2 text-right margin-top-5">
+                    <a class="plain" onclick="" href="http://kmongteam.blog.me" target="_blank">
+                        <img class="width-25px" alt="크몽 블로그" src="/img/main/desktop/blog.png">
+                    </a>
+                    <a class="margin-left-5 plain" onclick="" href="https://www.facebook.com/kmongkorea/" target="_blank">
+                        <img class="width-25px" alt="크몽 페이스북" src="/img/main/desktop/facebook.png">
+                    </a>
+                </div>
+            </div>
+            <div class="row margin-top-20 margin-bottom-15">
+                <div class="col-xs-7">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img title="공유서울 인증기업" class="width-100" src="/img/main/desktop/bottom/share.png">
+                        </div>
+                        <div class="col-xs-4 margin-top-5">
+                            <img title="SGI서울보증" class="width-100" src="/img/main/desktop/bottom/rankeydotcom.png">
+                        </div>
+                        <div class="col-xs-2">
+                            <img title="COMODO Trust" class="width-100" src="/img/main/desktop/bottom/comdo.png">
+                        </div>
+                        <div class="col-xs-4 margin-top-5">
+                            <a class="text_deco" href="http://www.rankey.com/rank/cert/cert_pop.php?mark_no=20180105-B001" target="_blank">
+                                <img class="width-100" src="/img/main/desktop/bottom/sgi.png" border="0">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="row">
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4 padding-right-5">
+                            <a onclick=" sendGAEvent('clickEvent', 'footer', '크몽 IOS 어플리케이션 링크');" href="http://itunes.apple.com/kr/app//id1039179300?mt=8" target="_blank">
+                                <img title="크몽 IOS 어플리케이션" class="width-100" src="/img/main/sample/apple_store.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-4 padding-left-5">
+                            <a onclick=" sendGAEvent('clickEvent', 'footer', '크몽 안드로이드 어플리케이션 링크');" href="https://play.google.com/store/apps/details?id=com.kmong.kmong" target="_blank">
+                                <img title="크몽 안드로이드 어플리케이션" class="width-100" src="/img/main/sample/google_play.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/build/js/kmong-1b91d8e5d3.master.js"></script><input class="dz-hidden-input" style="left: 0px; top: 0px; width: 0px; height: 0px; visibility: hidden; position: absolute;" type="file" multiple="multiple">
+
+            <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+<script>
+
+    var isFocused = true;
+
+
+    window.onload = function () {
+
+        startInactivityCheck();
+
+        var hidden, visibilityState, visibilityChange;
+        if (typeof document.hidden !== "undefined") {
+            hidden = "hidden", visibilityChange = "visibilitychange", visibilityState = "visibilityState";
+        }
+        else if (typeof document.mozHidden !== "undefined") {
+            hidden = "mozHidden", visibilityChange = "mozvisibilitychange", visibilityState = "mozVisibilityState";
+        }
+        else if (typeof document.msHidden !== "undefined") {
+            hidden = "msHidden", visibilityChange = "msvisibilitychange", visibilityState = "msVisibilityState";
+        }
+        else if (typeof document.webkitHidden !== "undefined") {
+            hidden = "webkitHidden", visibilityChange = "webkitvisibilitychange", visibilityState = "webkitVisibilityState";
+        }
+
+        if (typeof document.addEventListener === "undefined" || typeof hidden === "undefined") {
+            // not supported
+        }
+        else {
+            document.addEventListener(visibilityChange, function () {
+                switch (document[visibilityState]) {
+                    case "visible":
+                        userActivityDetected();
+                        isFocused = true;
+                                                    break;
+                    case "hidden":
+                        isFocused = false;
+                        break;
+                }
+            }, false);
+        }
+    };
+
+    var privateSocket = new Pusher('9e5ab64081473b0da968', {
+        cluster: 'ap1',
+        encrypted: true,
+        authEndpoint: '/api/v4/pusher_auth',
+        headers: {"X-CSRF-Token": "bJcG0S5zWKZLeLb8Q0Zuffm5rvMTdLqsIMPZNDqw"}
+    });
+
+    var privateChannel = privateSocket.subscribe('private-notification-' + 'eyJ2YWx1ZSI6IkU5bmhVVnVDRHF2NDc3bm1EalU3bkE9PSJ9');
+
+    privateChannel.unbind('inbox_read', function () {});
+    privateChannel.unbind('inbox_receive', function () {});
+    privateChannel.unbind('track_receive', function () {});
+    privateChannel.unbind('track_read', function () {});
+
+    //     var presenceChannel = presenceSocket.subscribe('presence-inbox');
+    privateChannel.bind('inbox_receive', function (data) {
+        // 새로 운 메시지가 온 경우
+        // 메시지 푸시후에 현재 메시지를 바로 볼수있는 위치가 아니면
+        // 행아웃 처럼 아래 새 메시지 표시 해줄것.
+
+                if(data.MSGFROM != 336484) {
+            doNotify(data.profilepicture, data.message, 'inbox', data.username, true);
+        }
+        
+    });
+
+    privateChannel.bind('inbox_read', function (data) {
+        if(typeof inbox_vue !== 'undefined') {
+            inbox_vue.updateInboxRead(data);
+        }
+    });
+
+
+    privateChannel.bind('track_receive', function (data) {
+                    doNotify(data.profilepicture, data.message, 'track', data.order_id, true);
+            });
+
+    privateChannel.bind('track_read', function(data) {
+        if(typeof track_vue !== 'undefined') {
+            track_vue.updateInbox2Read();
+        }
+    })
+
+    function doFocusedProcess() {
+        
+            }
+
+    var timeoutId = null;
+    function startInactivityCheck() {
+        timeoutId = window.setTimeout(function () {
+            privateSocket.disconnect();
+        }, 15 * 60 * 1000);
+    }
+    ;
+
+    // called by something that detects user activity
+    function userActivityDetected() {
+        if (timeoutId !== null) {
+            window.clearTimeout(timeoutId);
+        }
+
+        if (privateSocket.connection.state === 'disconnected') {
+            privateSocket.connect();
+        }
+
+        startInactivityCheck();
+    }
+    ;
+
+    function doNotify(thumb, message, type, uri, reload) {
+
+        var url = 'https://kmong.com/inbox/';
+        var title = uri + '님의 메시지';
+
+        if(type == 'track') {
+            url = 'https://kmong.com/track/' + uri;
+            title = '#' + uri + ' 주문 업데이트';
+        }
+        var notification = new Notification(title, {
+            icon: thumb,
+            body: message,
+        });
+        notification.onclick = function (){
+            if(reload) {
+                window.open(url + uri,  '_self', true);
+            }
+            window.focus(); this.close();
+        };
+    }
+
+
+</script>    
+
+    
+
+
+
+
+
+
+<script>
+// gig에서 사용
+function clickGig(PID, index) {
+
+    var formData = {
+        'PID' : PID,
+        'category_id' : 0,
+        'keyword' : '',
+        'index': index,
+        'pathname': decodeURIComponent(window.location.pathname)
+    };
+
+    if(typeof category_list_vue !== 'undefined') {
+        formData['category_id'] = category_list_vue.cat1;
+        if(category_list_vue.cat2 != 0) {
+            formData['category_id'] = category_list_vue.cat2;
+        }
+
+        formData['searchCompanyUsers'] = category_list_vue.searchCompanyUsers;
+        formData['searchOnlineUsers'] = category_list_vue.searchOnlineUsers;
+        formData['selectedSellerRatingList'] = category_list_vue.selectedSellerRatingList;
+        formData['selectedGigData'] = category_list_vue.selectedGigData;
+        formData['sort'] = category_list_vue.sort;
+    }
+
+    if(typeof search_gigs_vue !== 'undefined') {
+        formData['keyword'] = search_gigs_vue.searchKeyword;
+        formData['category_id'] = search_gigs_vue.cat1;
+        if(search_gigs_vue.cat2 != 0) {
+            formData['category_id'] = search_gigs_vue.cat2;
+        }
+        formData['searchCompanyUsers'] = search_gigs_vue.searchCompanyUsers;
+        formData['searchOnlineUsers'] = search_gigs_vue.searchOnlineUsers;
+        formData['selectedSellerRatingList'] = search_gigs_vue.selectedSellerRatingList;
+        formData['sort'] = search_gigs_vue.sort;
+    }
+
+    $.ajax({
+        'type' : 'POST',
+        'url' : '/gig/save_clicked_gig_log',
+        'data' : formData,
+        'dataType' : 'json',
+        success : function(response){},
+        error : function(response) {}
+    })
+
+
+    if(typeof gigList != 'undefined') {
+        for(var i in gigList) {
+            if(PID == gigList[i].id) {
+                ga('ec:addProduct', gigList[i]);
+
+                ga('ec:setAction', 'click', {       // click action.
+                    'list': gigList[i].list
+                });
+
+                // Send click with an event, then send user to product page.
+                ga('send', 'event', 'UX', 'click', gigList[i].list);
+                break;
+            }
+            if(i == (gigList.length -1)) break;
+        }
+    }
+
+}
+
+function setBookmark (target, PID) {
+
+    var $target = $(target);
+    $target.attr('disabled','disabled');
+    var html = $target.html();
+
+    var formData = {
+        PID: PID,
+    }
+
+    $.ajax({
+        'type': 'POST',
+        'url': '/gig/bookmark',
+        'data': formData,
+        'dataType': 'json',
+        'success': function (response) {
+            if (response.meta.status == 1 && response.meta.msg == 'succeed to delete bookmark') {
+                $target.html('<i class="fa fa-heart-o color-e6" style="font-weight:800"></i>');
+            } else {
+                $target.html('<i class="fa fa-heart color-red pulse"></i>');
+            }
+            $target.removeAttr('disabled');
+
+        }
+    })
+}
+
+
+
+function sendGAClickEvent(eventAction) {
+    var eventCategory = '';
+    
+
+
+
+    if(eventCategory !== '' && typeof eventAction !== 'undefined') {
+        sendGAEvent(eventCategory, eventAction, kmongCurrentPath);
+    }
+}
+
+
+$(document).ready(function(){
+    $('.sendGAEventClz').click(function() {
+        var eventAction = $(this).data('name');
+        sendGAClickEvent(eventAction);
+    });
+
+
+
+    var isSent = false;
+    $('#searchHeader, #searchKeyword').submit(function(event) {
+        event.preventDefault();
+        if(isSent === false) {
+//            isSent = true;
+            var $target = $(event.target);
+            if($target.find("[name=keyword]").length > 0) {
+                var keyword = $(event.target).find("[name=keyword]").val();
+                var addString = $target.data('name');
+                if(addString != '') {
+                    addString = ' - ' + addString;
+                }
+                if(keyword != '') {
+                    sendGAEvent('searchKeywords', kmongCurrentPath + addString, keyword);
+                }
+            }
+        }
+        $(this)[0].submit();
+    });
+
+
+    var isSendEnterEvent = false;
+    $('#mainKeyword').keyup(function(e) {
+        if(e.which == 10 || e.which == 13) {
+            if(isSendEnterEvent == false) {
+                isSendEnterEvent = true;
+                            }
+        }
+    });
+
+    //        Notification.requestPermission();
+        master_vue.isLoggedIn = true;
+        master_vue.helpCenterForm.from_email = 'lvxclmlawe@nate.com';
+    
+    var $body = $('body');
+    $(document).ajaxStart(function() {
+        $body.css({'cursor' : 'wait'});
+    }).ajaxStop(function() {
+        $body.css({'cursor' : 'default'});
+    });
+
+
+
+    var $chromeDownloadCloseBtn = $('#chromeDownloadCloseBtn');
+    if($chromeDownloadCloseBtn.length > 0) {
+
+        var $kmongNavBar = $('#kmongNavBar');
+//        $kmongNavBar.css('top',$('#chromeDownloadBody').height() + 'px');
+
+      $chromeDownloadCloseBtn.click(function(){
+            setCookie('chromeDownloadClose', "true", 1);
+            $('#chromeDownloadBody').slideUp(200);
+            $globalBody.removeClass('chrome-download');
+            $('.track-status-bar-general, .track-status-bar-danger, .track-status-bar-indication, .track-status-bar-indication, .track-status-bar-completion').css({'margin-top' : '94px'});
+            sassVariables.globalMarginTop -= parseInt(sassVariables.chromeDownloadHeight);
+            sassVariables.globalMarginTopOnlyYellowHeader -= parseInt(sassVariables.chromeDownloadHeight);
+            $kmongNavBar.animate({
+                top: 0,
+            },200);
+            var $gigFormFixed = $('.gig-form-fixed')
+            if($gigFormFixed.length > 0) {
+                $gigFormFixed.removeClass('chrome-download');
+            }
+        });
+        $(window).scroll(function () {
+            if($(window).scrollTop() > $('#chromeDownloadBody').height()){
+                $kmongNavBar.animate({
+                    top: 0
+                },200);
+                $('#chrome-download').css('top: ')
+            }
+        });
+    }
+
+            $('.kmongAlarmIcon').hover(function(){
+            if(master_vue.isInit == false && master_vue.notifications.length == 0) {
+                master_vue.isInit = true;
+                master_vue.getNotifications();
+            }
+        });
+    
+   $('[data-toggle="tooltip"]').tooltip({html: true});
+
+
+   // 종모양 알림 pagination
+    var $alramLayoutDiv = $('#alram_layout_div');
+    $alramLayoutDiv.scroll(function(){
+        if ( $alramLayoutDiv[0].scrollHeight - $alramLayoutDiv.scrollTop() <= $alramLayoutDiv.outerHeight()) {
+            if (!master_vue.isRequest) master_vue.getNotifications();
+            master_vue.isRequest = true;
+        }
+    });
+    $alramLayoutDiv.mousewheelStopPropagation();
+    // 종모양 알림 pagination
+
+
+
+
+    var $collapseGroup = $('#account-collapse-default, #buying-collapse-default, #selling-collapse-default, #gig_request-collapse-default,' + '#account-collapse-fixed, #buying-collapse-fixed, #selling-collapse-fixed, #gig_request-collapse-fixed');
+    $collapseGroup.on('show.bs.collapse', function (e) {
+        $($(this)[0].previousElementSibling).find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
+    });
+    $collapseGroup.on('hide.bs.collapse', function () {
+        $($(this)[0].previousElementSibling).find('i').removeClass('fa-caret-up').addClass('fa-caret-down');
+    });
+
+    copyRightYears();
+
+    quickMenuFixed(); // 퀵메뉴
+
+
+});
+
+function copyRightYears() {
+
+    var copyDate = Date();
+    var copyYears = copyDate.split(' ')[3];
+    var kmongCopyRight = $('#kmongCopyRight');
+
+    kmongCopyRight.text('Copyright © ' + copyYears + ' Kmong Inc. All rights reserved.');
+}
+
+function quickMenuFixed(){
+
+    var $quickMenuFixed = $('#quickMenuFixed'),
+        $quickMenuFixedWrap = $('.kmong-quick-menu-wrap'),
+        $fixedEmtyBox = $('#fixedEmtyBox'),
+        $quickMenuTop = $('#quickMenuTop'),
+        $quickMenuAutoTop = $('.quickMenuAutoTop'),
+        $windowMinWidth = 1300, // 13인치 이하
+        $window = $(window),
+        $quickMenuFAQ = $quickMenuFixed.children('#kmongNotificationMenuDiv');
+
+    $quickMenuFAQ.on('click',function () {
+        $('.kmong-quick-menu').css('z-index','9999');
+    });
+
+//    13인치 이상인 경우
+    if($window.width() > $windowMinWidth){
+
+                    if($quickMenuAutoTop.length > 0){
+                $quickMenuFixedWrap.addClass('fixed');
+
+                $quickMenuFixedWrap.css({
+                    'top' : $quickMenuAutoTop.offset().top + 'px',
+                });
+            } else {
+                $quickMenuFixedWrap.addClass('fixed');
+            }
+            }
+
+//    13인치 이하인 경우
+    if($window.width() < $windowMinWidth){
+        $fixedEmtyBox.show(); // 이게 보여야 13인치 이하 브라우저에서 가로 스크롤이 생김
+
+                    $quickMenuFixedWrap.addClass('fixed');
+        
+        $window.scroll(function () {
+
+            if($window.scrollLeft() > 22){
+                $quickMenuFixed.addClass('small');
+            } else {
+                $quickMenuFixed.removeClass('small');
+            }
+        });
+    }
+    $quickMenuTop.click(function() {
+        $('html, body').animate({
+            scrollTop : 0
+        }, 400);
+        return false;
+    });
+}
+
+
+</script>
+
+
+<script>
+        ga('send', 'pageview');
+    </script>
+<noscript>&amp;lt;img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=175922372980939&amp;amp;ev=PageView&amp;amp;noscript=1"
+    /&amp;gt;</noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script src="https://wcs.naver.net/wcslog.js" type="text/javascript"> </script>
+<script type="text/javascript">
+    if (!wcs_add) var wcs_add={};
+    wcs_add["wa"] = "s_5113d520404d";
+    if (!_nasa) var _nasa={};
+    wcs.inflow();
+    wcs_do(_nasa);
+</script>
+
+
+
+<div id="criteo-tags-div" style="display: none;"></div></body>
+</html>

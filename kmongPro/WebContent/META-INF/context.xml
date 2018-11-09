@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+	name="jdbc/myoracle" 
+	auth="Container" 
+	type="javax.sql.DataSource"
+	driverClassName="oracle.jdbc.OracleDriver" 
+	url="jdbc:oracle:thin:@211.63.89.174:1521:xe"
+	username="kmong" 
+	password="kmong" 
+	maxActive="100"
+	maxWait="10000"
+	maxTotal="-1" 
+	maxIdle="-1"
+	maxWaitMillis="-1"
+	removeAbandoned="true"
+	 />
+</Context>

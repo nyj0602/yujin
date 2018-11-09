@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title></title>
+
+<style>
+@media (min-width: 1301px)
+.kmong-quick-menu-wrap.mainFixed {
+    position: fixed!important;
+    top: 582px;
+}
+*, pre {
+	word-break: break-all;
+}
+body, figure {
+	margin: 0;
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+b, strong {
+	font-family: "NotoSansKR Bold" !important;
+	font-weight: inherit;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+img {
+	vertical-align: middle;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+hr, img {
+	border: 0;
+}
+body {
+	letter-spacing: -0.3px;
+	font-size: 13px;
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	background-color: #FAFAFA;
+}
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: transparent;
+}
+dl, ol, ul {
+	margin-top: 0px;
+}
+address, dl {
+	margin-bottom: 20px;
+}
+dt, kbd kbd {
+	font-weight: 700;
+}
+dd, dt {
+	line-height: 1.5438;
+}
+dd {
+	margin-left: 0px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	line-height: 1.1;
+	color: inherit;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.h4, h4 {
+	font-size: 15px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.h2, h2 {
+	font-size: 23px;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+.h3, h3 {
+	font-size: 17px;
+}
+::selection {
+	background: #FAE57C;
+	color: #4d4d4d;
+}
+.index-seller-modal-dialog, .modal-dialog, .user-modal-style {
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+/* @media all and (min-width:768px) */
+.index-seller-modal-dialog, .modal-dialog, .user-modal-style {
+	width: 600px;
+	margin: 30px auto;
+}
+.modal-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) !important;
+	transform: translate(-50%, -50%) !important;
+	margin: 0 !important;
+}
+.modal.fade .index-seller-modal-dialog, .modal.fade .modal-dialog, .modal.fade .user-modal-style {
+	-webkit-transform: translate(0, -25%);
+	transform: translate(0px, -25%);
+	transition: -webkit-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+.modal.in .index-seller-modal-dialog, .modal.in .modal-dialog, .modal.in .user-modal-style {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0px, 0px);
+}
+.fade {
+	opacity: 0;
+	transition: opacity .15s linear;
+}
+.modal, .modal-backdrop {
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+.fade.in {
+	opacity: 1;
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+body {
+	line-height: 1.5438;
+	color: #4d4d4d;
+}
+body {
+	background: #fafafa !important;
+	font-size: 14px;
+}
+.modal-content, .popover {
+	background-clip: padding-box;
+}
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 15px;
+	box-shadow: 0px 3px 9px rgba(0,0,0,0.5);
+	outline: 0;
+}
+/* @media all and (min-width:768px) */
+.modal-content {
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+.modal-content {
+	border-radius: 0 !important;
+	border: none !important;
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: 750px;
+}
+.container, .container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+}
+.container, .container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: 970px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.container {
+	width: 1024px !important;
+}
+.container {
+	width: 1200px !important;
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.padding-right-80 {
+	padding-right: 80px !important;
+}
+.container-fluid::after, .container-fluid::before, .container::after, .container::before, .row::after, .row::before {
+	content: " ";
+	display: table;
+}
+.container::after {
+	clear: both;
+}
+.row::after {
+	clear: both;
+}
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+.padding-left-80 {
+	padding-left: 80px !important;
+}
+.alarm-dropdown-menu-bottom, .text-center {
+	text-align: center !important;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+.col-xs-2 {
+	width: 16.66%;
+}
+.line-panel, .my-profile-menu-list, .padding-left-0 {
+	padding-left: 0px !important;
+}
+.col-xs-10 {
+	width: 83.33%;
+}
+.padding-right-0 {
+	padding-right: 0px !important;
+}
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+.padding-left-30 {
+	padding-left: 30px !important;
+}
+.border-dashed-left {
+	border-left: dashed #E6E6E6 1px;
+}
+.font-size-h4, h4 {
+	font-size: 16px !important;
+}
+.font-size-h2, h2 {
+	font-size: 20px !important;
+}
+.brand-black, .color-black {
+	color: #4d4d4d !important;
+}
+.color-dark-gray {
+	color: #888 !important;
+}
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+.color-dark-yellow-400, .color-yellow {
+	color: #ffd400;
+}
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+.width-55px {
+	width: 55px !important;
+}
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: "NotoSansKR Regular";
+	margin: 0;
+}
+button {
+	overflow: visible;
+}
+button, select {
+	text-transform: none;
+}
+.alert .alert-link, .alert-sm .alert-link, .alert-xs .alert-link, .close {
+	font-weight: 700;
+}
+.close {
+	float: right;
+	font-size: 19.5px;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0px 1px 0px #fff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+.kmong-how-close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	-webkit-appearance: none;
+}
+.font-size-h3, h3 {
+	font-size: 18px !important;
+}
+</style>
+</head>
+<body class="modal-open" id="master_body"><div tabindex="-1" class="modal fade in" id="kmongManual" role="dialog" aria-hidden="false" aria-labelledby="myModal" style="padding-left: 17px; display: block;"><div class="modal-dialog manual_modal modal-position" style="width: 640px;">
+        <div class="modal-content">
+            <div class="container" style="width: 100% !important;">
+                <div class="row">
+                    <div class="col-xs-12 text-center padding-top-30">
+                        <h2 class="color-black"><b>초간단 구매방법</b></h2>
+                        <button class="close kmong-how-close" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                        <h3 class="margin-top-5 color-dark-gray">서비스를 상품처럼 사고팔 수 있는 곳, 크몽</h3>
+                    </div>
+                </div>
+                <div class="row padding-right-80 padding-left-80 margin-top-30 margin-bottom-50">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="전문가찾기" src="/img/kmong_how/1.png"> 
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>01</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>'카테고리 선택'</b> 또는 <b>'검색창'</b>을 통해 전문가를 찾아보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="서비스 설명보기" src="/img/kmong_how/2.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>02</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">제공 <b>서비스에 대한 설명과 가격</b> 등을 꼼꼼히 살펴보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="견적문의" src="/img/kmong_how/3.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>03</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>크몽 메세지</b>를 통해 전문가에게<b> 견적을 문의</b>해보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="구매버튼 클릭" src="/img/kmong_how/4.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>04</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">구매버튼을 클릭하여 구매를 완료하세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="작업물 확인" src="/img/kmong_how/5.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-bottom-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>05</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5">전문가와 대화하며 최상의 작업물을 받아보세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 padding-right-0 padding-left-0">
+                                <img class="width-55px" alt="전문가 평가" src="/img/kmong_how/6.png">
+                            </div>
+                            <div class="col-xs-10 padding-left-30 padding-right-0 border-dashed-left">
+                                <dl>
+                                    <dt>
+                                        <h2 class="margin-top-0 color-dark-yellow-400"><i>06</i></h2>
+                                    </dt>
+                                    <dd>
+                                        <h4 class="color-black margin-top-5"><b>전문가를 평가</b>해주세요.</h4>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div></body>
+</html>

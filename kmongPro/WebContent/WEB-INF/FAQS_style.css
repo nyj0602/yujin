@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title></title>
+<style>
+pre, textarea {
+	overflow: auto;
+}
+*, pre {
+	word-break: break-all;
+}
+body, figure {
+	margin: 0;
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+a {
+	background-color: transparent;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: "NotoSansKR Regular";
+	margin: 0;
+}
+code, kbd, pre, samp {
+	font-size: 1em;
+}
+textarea {
+	resize: none;
+}
+button, select {
+	text-transform: none;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+body {
+	letter-spacing: -0.3px;
+	font-size: 13px;
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	background-color: #FAFAFA;
+}
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: transparent;
+}
+dl, ol, ul {
+	margin-top: 0px;
+}
+ol, ul {
+	margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: "NotoSansKR Regular" !important;
+	font-weight: 400;
+	line-height: 1.1;
+	color: inherit;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.h5, h5 {
+	font-size: 13px;
+}
+a {
+	color: #f26656;
+	text-decoration: none;
+}
+.h6, h6 {
+	font-size: 11px;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+input {
+	-webkit-appearance: none !important;
+}
+.h4, h4 {
+	font-size: 15px;
+}
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 12px;
+	line-height: 1.5438;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+::selection {
+	background: #FAE57C;
+	color: #4d4d4d;
+}
+.text-left {
+	text-align: left;
+}
+.text-justify {
+	text-align: justify;
+}
+.font-size-h5 {
+	font-size: 13px !important;
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.list-inline, .list-unstyled {
+	padding-left: 0px;
+	list-style: none;
+}
+.list-group {
+	margin-bottom: 20px;
+	padding-left: 0px;
+}
+.panel-group {
+	margin-bottom: 20px;
+}
+.checkbox-text, .position-relative {
+	position: relative;
+}
+.header-margin-none, .label-margin-none, .margin-none, .panel-margin-none {
+	margin: 0;
+}
+.bg-color-fa {
+	background-color: #FAFAFA !important;
+}
+.border-left, .input-file-close > div > i {
+	border-left: solid #E6E6E6 1px;
+}
+.kmong-KB {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	width: 440px;
+	z-index: 999999;
+}
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+.font-size-h5, h5 {
+	font-size: 14px !important;
+}
+.alarm-dropdown-menu-bottom, .text-center {
+	text-align: center !important;
+}
+.text-right {
+	text-align: right;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+.container {
+	width: 1024px !important;
+}
+.kmong-KB-nav-shadow {
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.bg-color-black {
+	background-color: #4d4d4d;
+}
+.col-xs-1, .kmong-grid-3-10, .kmong-grid-3-20, .kmong-grid-4-10, .kmong-grid-4-20, .kmong-grid-4-40, .kmong-grid-4-5, .kmong-grid-5-20 {
+	width: 8.33%;
+}
+.nav {
+	margin-bottom: 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+.bg-color-white, .line-panel {
+	background-color: #fff !important;
+}
+.margin-left-0 {
+	margin-left: 0px !important;
+}
+.margin-right-0 {
+	margin-right: 0px !important;
+}
+.extra-option-list-group-item, .gig-form-container .gig-form-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, .index-side-list-group-item, .list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.extra-option-list-group-item, .gig-form-container .gig-form-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, .index-side-list-group-item, .list-group-item, .panel-default {
+	border-color: #E6E6E6 !important;
+}
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+.line-panel, .my-profile-menu-list, .padding-left-0 {
+	padding-left: 0px !important;
+}
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+.padding-left-15 {
+	padding-left: 15px !important;
+}
+.overflow-y {
+	overflow-y: scroll;
+}
+.border-bottom-solid {
+	border-bottom: solid #E6E6E6 1px !important;
+}
+.border-top-solid {
+	border-top: solid #E6E6E6 1px !important;
+}
+.padding-top-15 {
+	padding-top: 15px;
+}
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+.container-fluid::after, .container-fluid::before, .container::after, .container::before, .row::after, .row::before {
+	content: " ";
+	display: table;
+}
+.row::after {
+	clear: both;
+}
+.panel-body {
+	padding: 20px;
+}
+.padding-all-15 {
+	padding: 15px !important;
+}
+.panel-body::after, .panel-body::before {
+	content: " ";
+	display: table;
+}
+.panel-body::after {
+	clear: both;
+}
+.panel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+.border-radius-bottom-none {
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+.padding-left-30 {
+	padding-left: 30px !important;
+}
+.text-left-imp {
+	text-align: left !important;
+}
+.form-control, .input-file-form-control {
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.input-group-sm > .form-control, .input-group-sm > .input-file-form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-sm, .message-box-request-gigs-select, .select-picker-sm .btn {
+	height: 40px;
+	padding: 11px 14px;
+	font-size: 13px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.font-size-h4 {
+	font-size: 15px !important;
+}
+.font-color-8, .font-color-lighter {
+	color: #878787 !important;
+}
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+.padding-all-20 {
+	padding: 20px !important;
+}
+.border-radius-0, .border-radius-none, .user-profile-bottom-container {
+	border-radius: 0 !important;
+}
+.panel, .panel-heading, .form-control {
+	border-radius: 0;
+}
+/* @media all and (min-width:1301px) */
+.kmong-quick-menu-wrap {
+	position: absolute;
+	width: 70px;
+	display: inline-block;
+	font-size: 10px;
+}
+.alarm-menu-top-right > div, .inline-block {
+	display: inline-block;
+	zoom: 1;
+}
+/* @media all and (min-width:1301px) */
+.kmong-quick-menu {
+	width: 70px;
+	position: absolute;
+	top: 582px;
+	right: -40px;
+	z-index: 93;
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: 750px;
+}
+.container, .container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+}
+.container, .container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: 970px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.container::after {
+	clear: both;
+}
+.global-body {
+	margin-top: 100px;
+}
+body {
+	line-height: 1.5438;
+	color: #4d4d4d;
+}
+body {
+	background: #fafafa !important;
+	font-size: 14px;
+}
+.carousel, .carousel-inner {
+	position: relative;
+}
+.carousel-inner {
+	overflow: hidden;
+	width: 100%;
+}
+.kmong-KB-menu-margin-adjust {
+	margin-top: 2px;
+}
+.carousel-inner > .item {
+	display: none;
+	position: relative;
+	transition: .6s ease-in-out left;
+}
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+	display: block;
+}
+.carousel-inner > .active {
+	left: 0px;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.help-block {
+	display: block;
+	padding-left: 15px;
+	font-size: 11px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #8c8c8c;
+}
+.bg-color-transparent {
+	background-color: transparent !important;
+}
+.col-xs-11 {
+	width: 91.66%;
+}
+.padding-right-0 {
+	padding-right: 0px !important;
+}
+.padding-right-15 {
+	padding-right: 15px !important;
+}
+.font-size-h4, h4 {
+	font-size: 16px !important;
+}
+.panel-heading > .dropdown .dropdown-toggle, .panel-title, .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+	color: inherit;
+}
+.panel-title, .panel > .list-group, .panel > .panel-collapse > .list-group, .panel > .panel-collapse > .table, .panel > .table, .panel > .table-responsive > .table {
+	margin-bottom: 0px;
+}
+.panel-title {
+	margin-top: 0px;
+	font-size: 15px;
+}
+.nav > li > a {
+	padding: 10px 15px;
+}
+.NGB, .active.selling-history-message-count, .active > .kmongteam-nav-item, .active > .kmongteam-nav-item:focus, .active > .kmongteam-nav-item:hover, .ad-request-active, .ad-request-nav:focus, .ad-request-nav:hover, .become-seller-faq-active > h5, .bookmarks-menu-item.active > a, .category-list-item.active, .category-list-item > a:focus, .category-list-item > a:hover, .consulting-section-1 .consulting-panel .profile-wrap > h5, .consulting-section-3 .consulting-footer li, .event-banner-title, .event-nav-group > li.active > a, .gig-detail-top-nav-active, .gig-form-header-item, .gig-form-header-item .gig-form-header-page-number, .gig-form-header-item.active, .gig-form-header-item.active .gig-form-header-page-number, .gigs-search-categories:focus, .gigs-search-categories:hover, .heading-hover:focus, .heading-hover:hover, .kmong-KB-nav > li.active > a, .my-profile-menu-list > .active > a, .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover, .profits-work-nav > li.active > a, .seller-menu .active, .seller-menu-item:hover, .track-problem-resolution.active, .user-edit-text:focus, .user-edit-text:hover {
+	font-family: "NotoSansKR Bold" !important;
+}
+.margin-bottom-15 {
+	margin-bottom: 15px !important;
+}
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+.color-gray-d1 {
+	color: #ccc !important;
+}
+.font-size-20 {
+	font-size: 20px !important;
+}
+.kmong-KB .carousel div > div.col-xs-11 {
+	width: 94%;
+}
+.nav::after, .nav::before {
+	content: " ";
+	display: table;
+}
+.nav::after {
+	clear: both;
+}
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+.font-size-h6, h6 {
+	font-size: 12px !important;
+}
+.padding-left-5 {
+	padding-left: 5px !important;
+}
+.my-profile-menu-list > li:not(:first-child), .padding-top-15 {
+	padding-top: 15px !important;
+}
+.padding-bottom-15 {
+	padding-bottom: 15px !important;
+}
+.cursor {
+	cursor: pointer;
+}
+.col-xs-4 {
+	width: 33.33%;
+}
+.nav > li, .nav > li > a {
+	display: block;
+	position: relative;
+}
+.kmong-KB-nav > li {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.color-dark-yellow-400, .color-yellow {
+	color: #ffd400;
+}
+.fa, .fa-stack {
+	display: inline-block;
+}
+.fa {
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0px, 0px);
+}
+.fa-arrow-left::before {
+	content: "\f060";
+}
+.font-size-h6 {
+	font-size: 11px !important;
+}
+.kmong-KB-footer {
+	z-index: 100;
+	position: absolute;
+	bottom: 45px;
+	left: 0px;
+	right: 0px;
+}
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+.brand-black, .color-black {
+	color: #4d4d4d !important;
+}
+.la-ball-fall, .la-ball-fall > div {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.la-ball-fall {
+	display: block;
+	font-size: 0px;
+	height: 20px;
+}
+.la-ball-fall > div {
+	display: inline-block;
+	float: none;
+	background-color: currentColor;
+	border: 0 solid currentColor;
+	width: 6px;
+	height: 6px;
+	margin: 6px 4px 4px;
+	border-radius: 100%;
+	opacity: 0;
+	-webkit-animation: ball-fall 1s ease-in-out infinite;
+	-moz-animation: ball-fall 1s ease-in-out infinite;
+	-o-animation: ball-fall 1s ease-in-out infinite;
+	animation: ball-fall 1s ease-in-out infinite;
+}
+.la-ball-fall > div:nth-child(1) {
+	-webkit-animation-delay: -.2s;
+	-moz-animation-delay: -.2s;
+	-o-animation-delay: -.2s;
+	animation-delay: -0.2s;
+}
+.la-ball-fall > div:nth-child(2) {
+	-webkit-animation-delay: -.1s;
+	-moz-animation-delay: -.1s;
+	-o-animation-delay: -.1s;
+	animation-delay: -0.1s;
+}
+.la-ball-fall > div:nth-child(3) {
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.padding-left-20 {
+	padding-left: 20px !important;
+}
+.padding-right-20 {
+	padding-right: 20px !important;
+}
+a.plain-color-white {
+	text-decoration: none;
+	color: #fff !important;
+}
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+.tab-content > .tab-pane {
+	display: none;
+}
+.tab-content > .active {
+	display: block;
+}
+.pill-content > .pill-pane, .tab-content > .tab-pane {
+	display: none;
+}
+.pill-content > .active, .tab-content > .active {
+	display: block;
+}
+.padding-left-25 {
+	padding-left: 25px !important;
+}
+.btn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 1.5438;
+	border-radius: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #f26656;
+	border-color: #f0513e;
+}
+.btn-group-sm > .btn, .btn-sm, .gig-detail-profile-btn {
+	padding: 11px 14px;
+	font-size: 13px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.btn-block {
+	display: block;
+	width: 100%;
+}
+.margin-all-0 {
+	margin: 0 !important;
+}
+.certification-tax-notification-body, .padding-all-10, .signup-agreement-body {
+	padding: 10px !important;
+}
+.border-solid {
+	border: 1px solid #E6E6E6 !important;
+}
+.border-top-none {
+	border-top: none !important;
+}
+.btn-default {
+	color: #4d4d4d;
+	background-color: #fff;
+	border-color: #e6e6e6;
+}
+.btn-group-xs > .btn, .btn-ssm, .btn-xs {
+	font-size: 11px;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+.btn-group-xs > .btn, .btn-xs {
+	padding: 1px 5px;
+}
+.margin-top-15 {
+	margin-top: 15px !important;
+}
+.form-control, .input-file-form-control, .select-control > select {
+	display: block;
+	width: 100%;
+	height: 52px;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 1.5438;
+	background-image: none;
+}
+textarea.form-control, textarea.input-file-form-control {
+	height: auto;
+}
+.input-text-group > input {
+	text-align: right;
+	padding-right: 30px !important;
+}
+:-ms-input-placeholder.form-control, :-ms-input-placeholder.input-file-form-control {
+	color: #999;
+}
+.fa-exclamation-triangle::before, .fa-warning::before {
+	content: "\f071";
+}
+.bg-color-gray {
+	background-color: #F1F1F1 !important;
+}
+.kmong-kb-search {
+	color: #666;
+}
+.border-radius-none {
+	border-radius: 0 !important;
+}
+:first-child.extra-option-list-group-item, .gig-form-container :first-child.gig-form-list-group-item, :first-child.index-side-list-group-item, :first-child.list-group-item {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+:last-child.extra-option-list-group-item, .gig-form-container :last-child.gig-form-list-group-item, :last-child.index-side-list-group-item, :last-child.list-group-item {
+	margin-bottom: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.input-text-group {
+	position: relative;
+}
+.font-size-h2 {
+	font-size: 23px !important;
+}
+.brand-primary, .color-pink, .color-primary {
+	color: #f26656 !important;
+}
+.input-text-group > .input-inner-text-sm-no-label {
+	top: 10px !important;
+}
+.input-text-group > .input-inner-text-default, .input-text-group > .input-inner-text-default-no-label, .input-text-group > .input-inner-text-lg-no-label, .input-text-group > .input-inner-text-sm-no-label {
+	position: absolute;
+	top: 46px;
+	right: 14px;
+	z-index: 2;
+	text-align: center;
+	pointer-events: none;
+	color: #878787;
+}
+input[type=search] {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+.fa-chevron-circle-down::before {
+	content: "\f13a";
+}
+.line-height {
+	line-height: 1.5em;
+	letter-spacing: -0.4px;
+}
+.list-unstyled li {
+	padding: 5px 20px;
+}
+button {
+	overflow: visible;
+}
+.panel-group .panel {
+	margin-bottom: 0px;
+	border-radius: 5px;
+}
+.kmong-KB .kb-border-solid {
+	border-bottom: 0;
+}
+.panel-group .panel + .panel {
+	margin-top: 5px;
+}
+.collapse {
+	display: none;
+}
+.gig-form-container .panel > .list-group .gig-form-list-group-item, .gig-form-container .panel > .panel-collapse > .list-group .gig-form-list-group-item, .panel > .list-group .extra-option-list-group-item, .panel > .list-group .gig-form-container .gig-form-list-group-item, .panel > .list-group .index-side-list-group-item, .panel > .list-group .list-group-item, .panel > .panel-collapse > .list-group .extra-option-list-group-item, .panel > .panel-collapse > .list-group .gig-form-container .gig-form-list-group-item, .panel > .panel-collapse > .list-group .index-side-list-group-item, .panel > .panel-collapse > .list-group .list-group-item {
+	border-width: 1px 0;
+	border-radius: 0;
+}
+.gig-form-container .panel > :first-child.list-group :first-child.gig-form-list-group-item, .gig-form-container .panel > .panel-collapse > :first-child.list-group :first-child.gig-form-list-group-item, .panel > :first-child.list-group :first-child.extra-option-list-group-item, .panel > :first-child.list-group .gig-form-container :first-child.gig-form-list-group-item, .panel > :first-child.list-group :first-child.index-side-list-group-item, .panel > :first-child.list-group :first-child.list-group-item, .panel > .panel-collapse > :first-child.list-group :first-child.extra-option-list-group-item, .panel > .panel-collapse > :first-child.list-group .gig-form-container :first-child.gig-form-list-group-item, .panel > .panel-collapse > :first-child.list-group :first-child.index-side-list-group-item, .panel > .panel-collapse > :first-child.list-group :first-child.list-group-item {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.gig-form-container .panel > :last-child.list-group :last-child.gig-form-list-group-item, .gig-form-container .panel > .panel-collapse > :last-child.list-group :last-child.gig-form-list-group-item, .panel > :last-child.list-group :last-child.extra-option-list-group-item, .panel > :last-child.list-group .gig-form-container :last-child.gig-form-list-group-item, .panel > :last-child.list-group :last-child.index-side-list-group-item, .panel > :last-child.list-group :last-child.list-group-item, .panel > .panel-collapse > :last-child.list-group :last-child.extra-option-list-group-item, .panel > .panel-collapse > :last-child.list-group .gig-form-container :last-child.gig-form-list-group-item, .panel > .panel-collapse > :last-child.list-group :last-child.index-side-list-group-item, .panel > .panel-collapse > :last-child.list-group :last-child.list-group-item {
+	border-bottom: 0;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.kmong-KB .panel-list-group-only > li > span {
+	color: #666;
+}
+.selling-panels > .events-more-btn > a, .selling-panels > .events-more-btn > a:active, .selling-panels > .events-more-btn > a:hover, a.plain, a.plain:active, a.plain:hover {
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.pull-right {
+	float: right !important;
+}
+.pull-right {
+	float: right;
+}
+h4 .fa {
+	font-size: 16px;
+}
+.fa-chevron-down::before {
+	content: "\f078";
+}
+.kmong-KB .KB-arrow-icon {
+	transition: all .4s ease;
+}
+.twitter-typeahead {
+	width: 100%;
+}
+.kmong-KB-search-icon {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.kmong-KB .kb-category-close {
+	position: absolute;
+	top: 8px;
+	right: 13px;
+}
+.fa-close::before, .fa-remove::before, .fa-times::before {
+	content: "\f00d";
+}
+.fa-search::before {
+	content: "\f002";
+}
+legend, pre {
+	color: #4d4d4d;
+}
+code, kbd, pre, samp {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+.tt-menu {
+	width: 100%;
+	border-top: 2px solid #ffd400;
+	text-align: left;
+	position: relative;
+	z-index: 2;
+}
+.kmong-KB .carousel > div > div.col-xs-1, .kmong-KB .carousel > div > div.kmong-grid-3-10, .kmong-KB .carousel > div > div.kmong-grid-3-20, .kmong-KB .carousel > div > div.kmong-grid-4-10, .kmong-KB .carousel > div > div.kmong-grid-4-20, .kmong-KB .carousel > div > div.kmong-grid-4-40, .kmong-KB .carousel > div > div.kmong-grid-4-5, .kmong-KB .carousel > div > div.kmong-grid-5-20 {
+	width: 6%;
+}
+.position-absolute {
+	position: absolute;
+}
+.font-size-h2, h2 {
+	font-size: 20px !important;
+}
+.kmong-KB-nav > li.active > a {
+	box-shadow: inset 0px -3px #ffd400;
+	color: #4d4d4d !important;
+}
+</style>
+</head>
+<body id="master_body"><div class="global-body"><div class="container position-relative"><div class="inline-block text-center kmong-quick-menu" id="quickMenuFixed" style="z-index: 99999;"><div class="kmong-quick-menu-wrap"><div class="panel panel-default margin-bottom-10"><div class="panel-body padding-all-15"><div class="row"><div class="col-xs-12"><div class="bg-color-fa border-left kmong-KB text-left font-size-h5" id="kmongKnowledgeBase" style="height: 669px;">
+    <div class="carousel slide" id="kmongKnowledgeBaseCarousel" data-interval="false" data-ride="carousel">
+        <div class="row margin-left-0 margin-right-0 kmong-KB-nav-shadow">
+            <div class="col-xs-11 padding-left-0 padding-right-0">
+                <ul class="nav text-center bg-color-white kmong-KB-nav" role="tablist">
+                                            <li class="kmongKBNav col-xs-4 active" role="presentation"><a class="font-color-lighter font-size-h4" id="kmongFAQLink" role="tab" aria-controls="home" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);" href="#kmongFAQ" data-toggle="tab">자주 묻는 질문</a></li>
+                        <li class="kmongKBNav col-xs-4" role="presentation"><a class="font-color-lighter font-size-h4" id="kmongHelpCenterLink" role="tab" aria-controls="profile" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);" href="#kmongHelpCenter" data-toggle="tab">크몽 고객센터</a></li>
+                        <li class="kmongKBNav col-xs-4" role="presentation">
+                            <a class="font-color-lighter font-size-h4 position-relative" id="kmongNotificationLink" role="tab" aria-controls="messages" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);" href="#kmongNotifications" data-toggle="tab">
+                                
+                                크몽 안내 <span class="color-primary font-size-h2 position-absolute" style="top: -5px; right: 20px; display: none;">•</span>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="col-xs-1 bg-color-white text-right padding-bottom-10 padding-left-0 cursor" style="margin-top: 11px;">
+                <i class="fa fa-close color-gray-d1 font-size-20"></i>
+            </div>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            
+            <div class="item active kmong-KB-menu" style="height: 669px;" data-index="0">
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kbCategoryBody" style="height: 629px;">
+                    <div class="col-xs-12 padding-left-0 padding-right-0">
+                        <div class="tab-content">
+                            <div class="kmongKBTab tab-pane position-relative active" id="kmongFAQ" role="tabpanel">
+                                <div class="padding-left-15 padding-right-15">
+                                    <div id="kbCategoryHeader">
+                                        <div class="font-size-20 NGB margin-top-30">문의 전 확인</div>
+                                        <h5 class="margin-top-5">아래 검색창을 통해 원하시는 답변을 빠르게 찾아 보실 수 있습니다.</h5>
+                                    </div>
+                                    <div class="form-group input-text-group margin-top-30">
+                                        <span class="twitter-typeahead" style="display: inline-block; position: relative;"><input class="form-control padding-left-30 input-sm text-left-imp kb_search_bar border-radius-0 tt-input" style="vertical-align: top; position: relative;" dir="auto" spellcheck="false" type="text" placeholder="검색어를 입력해주세요" autocomplete="off"><pre aria-hidden="true" style='text-transform: none; text-indent: 0px; letter-spacing: 0px; font-family: "NotoSansKR Regular"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; white-space: pre; visibility: hidden; position: absolute;'></pre><div class="tt-menu" style="left: 0px; top: 100%; display: none; position: absolute; z-index: 100;"><div class="list-group margin-none margin-none-0"></div></div></span>
+                                        <div class="kmong-KB-search-icon">
+                                            <i class="fa fa-search font-color-lighter" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="inline-block kb-category-close cursor" style="display: none;">
+                                            <span>
+                                                <i class="fa fa-times font-color-lighter" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="panel-group margin-none border-radius-none margin-top-30" id="kbCategoryAccordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel0">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading0" aria-expanded="true" aria-controls="kbCategoryHeading0" onclick="clickKBCategoryHeader(0)" href="#kbCategoryBody0" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    가입 / 인증 / 탈퇴                                                    <span class="pull-right" id="arrowToggle_0">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody0" role="tabpanel" aria-labelledby="kbCategoryHeading0">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>회원가입은 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>회원가입 시 나이 제한이 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>외국인도 회원가입 할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>이미 가입된 이메일 주소라고 표시되며 회원가입이 진행되지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰 인증은 왜 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰이 없는 경우는 어떻게 회원가입을 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>법인 명의의 휴대폰은 인증이 불가능한가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>본인 명의 휴대폰 인증이 안 되는 경우가 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰 인증하려는데 인증 번호가 오지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>본인 명의로 가입된 휴대폰이 없을 경우 지인 혹은 가족 휴대폰으로 인증 받아도 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>해외 거주로 휴대폰 인증이 불가능한 경우는 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰 인증을 하려고 시도하면 팝업창이 열리지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>이미 크몽에 가입되어 있는 휴대폰 번호라고 표시되며 회원가입이 진행되지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>회원 탈퇴는 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>탈퇴하면 개인정보는 모두 삭제되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>탈퇴 후 재가입하려니 인증이 되지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>회원 탈퇴 후 재가입 할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰 인증이 불가능한 시간이 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>강제 탈퇴가 될 수 있나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel1">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading1" aria-expanded="true" aria-controls="kbCategoryHeading1" onclick="clickKBCategoryHeader(1)" href="#kbCategoryBody1" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    서비스 문의 / 구매                                                    <span class="pull-right" id="arrowToggle_1">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody1" role="tabpanel" aria-labelledby="kbCategoryHeading1">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 구매 방법이 어떻게 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 또는 서비스를 추천 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가의 연락처를 확인할 수 없나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽 랭킹순 / 추천순은 무엇이고, 어떻게 정해지나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>방금 결제한 서비스는 어디서 확인하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>거래 중인 전문가와 연락이 되지 않아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매관리는 어떻게 이용하는 건가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>거래 중 추가 금액 발생 시에는 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매했던 서비스를 다시 구매하려면 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>상품을 배송 받을 주소는 어디에 적나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>첨부파일을 보내려는데, 용량이 너무 커서 안 보내집니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 응답률은 어떻게 집계되나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel2">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading2" aria-expanded="true" aria-controls="kbCategoryHeading2" onclick="clickKBCategoryHeader(2)" href="#kbCategoryBody2" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    평가 / 구매확정                                                    <span class="pull-right" id="arrowToggle_2">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody2" role="tabpanel" aria-labelledby="kbCategoryHeading2">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매확정이란 무엇인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매확정 버튼이 보이지 않아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>실수로 구매확정을 눌렀을 땐 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>작업이 길어질 것 같은데 구매확정을 미리 하고 작업을 진행해도 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>작업물이 발송되었는데, 의뢰인이 구매를 확정하지 않을 수도 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매확정 후에도 주문을 취소 / 환불 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>구매확정 후에도 수정 또는 추가 작업을 요청할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 평가란 무엇인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 평가는 누구나 작성 가능한가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가도 의뢰인을 평가할 수 있나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel3">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading3" aria-expanded="true" aria-controls="kbCategoryHeading3" onclick="clickKBCategoryHeader(3)" href="#kbCategoryBody3" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    서비스등록/ 승인 / 수정                                                    <span class="pull-right" id="arrowToggle_3">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody3" role="tabpanel" aria-labelledby="kbCategoryHeading3">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매를 시작하려면 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 승인이 거절 되었어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>등록할 서비스의 기본 가격은 VAT 포함 가격으로 작성해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>등록했던 서비스를 수정 / 삭제 / 중지하고 싶은데, 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 등록을 위해서는 휴대폰 인증을 꼭 받아야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 상세페이지에서 추가옵션이 보이지 않아요!</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>패키지가 뭔가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 등록 시에 동영상은 어떻게 업로드 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 등록 시에 등록 가능한 이미지의 사이즈가 어떻게 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매 중이던 서비스가 갑자기 중단되었어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>상세 이미지는 필수 등록 사항이 아닌가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 등록 시 어떤 이미지를 등록해야하나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel4">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading4" aria-expanded="true" aria-controls="kbCategoryHeading4" onclick="clickKBCategoryHeader(4)" href="#kbCategoryBody4" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    크몽캐시                                                    <span class="pull-right" id="arrowToggle_4">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody4" role="tabpanel" aria-labelledby="kbCategoryHeading4">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽캐시라는 게 무엇인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 구매 시 크몽캐시를 어떻게 사용하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>무상 적립된 크몽캐시로 결제한 금액에 대해 현금영수증 / 세금계산서를 발급 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>무상 적립된 크몽캐시로 서비스를 구매하고 취소할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽캐시는 돈으로 환불 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽캐시 사용 내역은 어디서 확인할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>친구초대 프로모션, 어떻게 참여할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>친구초대 인원에 제한이 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>친구초대로 가입해서 친구가 첫 구매를 했는데 크몽캐시는 언제 적립되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>친구의 구매 시 지급되는 크몽캐시는 한 번만 지급되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>회원가입 시 프로모션 코드를 입력했는데 크몽캐시가 안 들어옵니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>탈퇴 후 친구초대로 재가입 한 경우에도 크몽캐시가 적립 되나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel5">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading5" aria-expanded="true" aria-controls="kbCategoryHeading5" onclick="clickKBCategoryHeader(5)" href="#kbCategoryBody5" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    광고상품                                                    <span class="pull-right" id="arrowToggle_5">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody5" role="tabpanel" aria-labelledby="kbCategoryHeading5">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>등록한 서비스를 더 많은 의뢰인들에게 노출 시키고 싶습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>광고 상품 구매에 대한 세금계산서를 발급 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽캐시로 광고를 구매할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>광고 상품에 대한 환불은 어떻게 진행되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽의 상위노출 광고 상품은 얼마인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>결제 진행한 서비스 말고 다른 서비스에 광고를 할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>누구나 광고 상품을 구매할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>광고 효과 리포트를 받아 볼 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>진행 중인 광고를 잠시 중단할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>광고 중인데, 다른 서비스에 비해 노출이 많이 되지 않는 것 같아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>직거래를 권유 받았습니다. 어떻게 해야 하죠?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel6">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading6" aria-expanded="true" aria-controls="kbCategoryHeading6" onclick="clickKBCategoryHeader(6)" href="#kbCategoryBody6" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    직거래 / 신고 / 패널티                                                    <span class="pull-right" id="arrowToggle_6">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody6" role="tabpanel" aria-labelledby="kbCategoryHeading6">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>계정이 정지되었는데 수익금 인출은 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>사이트 이용 제한 (패널티)의 기준이 뭔가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>불량 전문가를 크몽에 신고할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>직거래로 인해 피해를 입었습니다. 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>직거래를 하면 안 되는 이유가 뭔가요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel7">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading7" aria-expanded="true" aria-controls="kbCategoryHeading7" onclick="clickKBCategoryHeader(7)" href="#kbCategoryBody7" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    사이트소개                                                    <span class="pull-right" id="arrowToggle_7">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody7" role="tabpanel" aria-labelledby="kbCategoryHeading7">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>고객센터 운영시간은 어떻게 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>입점 / 제휴 절차는 어떻게 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>모바일을 통해서도 크몽을 이용 할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>개인정보는 안전하게 보호되고 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽은 뭐 하는 사이트인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>안전한 거래를 위해 크몽에서 운영하고 있는 제도에는 어떤 것이 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>사이트가 정상적으로 작동하지 않는것 같아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매 수수료는 얼마인가요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel8">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading8" aria-expanded="true" aria-controls="kbCategoryHeading8" onclick="clickKBCategoryHeader(8)" href="#kbCategoryBody8" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    로그인 / 계정정보                                                    <span class="pull-right" id="arrowToggle_8">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody8" role="tabpanel" aria-labelledby="kbCategoryHeading8">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>담당자가 변경되었는데요, 인증된 휴대폰 번호는 어떻게 바꿔야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>계정이 영구 정지되면 크몽을 이용할 수 없나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>계정이 제한되었어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>비밀번호를 변경하고 싶어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>아이디(이메일)를 변경할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>이메일로 임시 비밀번호를 발급 받았는데 메일이 안 옵니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>임시 비밀번호로 로그인이 되지 않습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>아이디 찾기를 했는데 SMS가 오지 않아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>로그인 정보를 입력하지 않았는데 자동으로 로그인이 되어 있습니다.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>아이디와 비밀번호가 기억나지 않아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>아이디(계정)을 여러 개 사용할 수 있나요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel9">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading9" aria-expanded="true" aria-controls="kbCategoryHeading9" onclick="clickKBCategoryHeader(9)" href="#kbCategoryBody9" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    결제 / 세금계산서                                                    <span class="pull-right" id="arrowToggle_9">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody9" role="tabpanel" aria-labelledby="kbCategoryHeading9">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>금액을 미리 충전해둘 수는 없나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>작업을 먼저한 후 나중에 결제해도 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>매입세액공제를 받으려면 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>크몽이 세금계산서를 발행해주나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>현금영수증 / 세금계산서는 언제, 어떻게 발행 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>가상계좌는 어디에서 확인하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>휴대폰 소액결제가 되지 않아요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>무통장 입금을 신청 후 송금할 때, 받는 예금주 명은 무엇인가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>해외에서도 결제가 가능한가요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel10">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading10" aria-expanded="true" aria-controls="kbCategoryHeading10" onclick="clickKBCategoryHeader(10)" href="#kbCategoryBody10" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    수정 / 취소 /환불                                                    <span class="pull-right" id="arrowToggle_10">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody10" role="tabpanel" aria-labelledby="kbCategoryHeading10">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>결과물이 마음에 들지 않습니다. 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>주문은 어떻게 취소하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>주문이 취소될 경우 환불은 어떻게 받나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>취소 요청하면 결제 금액은 언제 크몽캐시로 전환되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>상대방이 일방적으로 주문 취소를 요청하는데 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>작업물 수정 요청은 어떻게 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>분쟁조정 상태가 뭔가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가가 저작권 위반 신고를 했다고 합니다. 어떻게 해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>문제해결이 뭔가요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel11">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading11" aria-expanded="true" aria-controls="kbCategoryHeading11" onclick="clickKBCategoryHeader(11)" href="#kbCategoryBody11" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    판매 / 수익금                                                    <span class="pull-right" id="arrowToggle_11">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody11" role="tabpanel" aria-labelledby="kbCategoryHeading11">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>서비스 판매 방법이 어떻게 되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매관리는 어떻게 이용하는 건가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>수익금을 국세청에 신고해야 하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>수익금 출금은 언제, 어떻게 할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매 수익금은 언제 정산되는건가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>수익금 출금신청을 취소할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>판매 수수료에 대해서도 세금계산서가 발급되나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>작업물 발송이 뭔가요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>잠시 동안 주문을 받을 수 없을 땐 어떻게 해야하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>저작권있는 이미지나 내용을 사용해 신고되었어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>의뢰인이 저작권을 침해했어요.</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 등급은 어떤 기준으로 산정되나요 ?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="panel panel-default margin-top-0 border-radius-none kb-border-solid" id="kbCategoryAccordionPanel12">
+                                        <div class="bg-color-white padding-all-20 border-radius-none" role="tab">
+                                            <a class="plain" id="kbCategoryHeading12" aria-expanded="true" aria-controls="kbCategoryHeading12" onclick="clickKBCategoryHeader(12)" href="#kbCategoryBody12" data-toggle="collapse" data-parent="#kbCategoryAccordion">
+                                                <h4 class="panel-title NGB">                                                    전문가 마일리지                                                    <span class="pull-right" id="arrowToggle_12">
+                                                        <i class="fa fa-chevron-down color-yellow KB-arrow-icon"></i>
+                                                    </span>
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="kbCategoryBody12" role="tabpanel" aria-labelledby="kbCategoryHeading12">
+                                            <ul class="list-group margin-none panel-list-group-only padding-left-15 padding-right-15">
+                                                <li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>광고 상품 (플러스 / 프리미엄) 구매 시 전문가 마일리지를 어떻게 사용하나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 마일리지는 돈으로 환불 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 마일리지 사용 및 적립 내역은 어디서 확인할 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 마일리지로 결제한 금액에 대해 현금영수증 / 세금계산서를 발급 받을 수 있나요?</span>
+                                                </li><li class="list-group-item padding-top-10 padding-bottom-10 cursor">
+                                                    <span>전문가 마일리지라는 게 무엇인가요?</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row margin-left-0 margin-right-0 bg-color-white padding-top-15 padding-bottom-15 border-top-solid">
+                                        <div class="col-xs-12 padding-right-0 padding-left-20 text-left">
+                                            <h5 class="margin-top-0 font-color-lighter">원하는 결과를 찾지 못했나요?</h5>
+                                            <button class="btn btn-primary padding-top-10 padding-bottom-10 padding-left-15 padding-left-15" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);$('#kmongHelpCenterLink').trigger('click');$('#kbCategoryBody').scrollTop(0);">크몽 고객센터</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-unstyled overflow-y margin-none padding-left-15 position-relative" id="kbCategoryQueryBody" style="display: none;">
+                                    
+
+                                    <li class="border-bottom-solid padding-bottom-15 padding-top-15 bg-color-transparent border-radius-none kmong-kb-search cursor padding-left-0 padding-right-0">
+                                        <h5 class="margin-top-0 font-color-lighter">원하는 결과를 찾지 못했나요?</h5>
+                                        <button class="btn btn-primary padding-top-10 padding-bottom-10 padding-left-15 padding-left-15" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);$('#kmongHelpCenterLink').trigger('click');$('#kbCategoryBody').scrollTop(0);">크몽 고객센터</button>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="kmongKBTab tab-pane kmong-KB-menu-margin-adjust" id="kmongHelpCenter" role="tabpanel">
+                                <div class="row margin-none bg-color-fa">
+                                    <div class="col-xs-12 padding-right-15 padding-left-15">
+                                        <div class="font-size-20 NGB margin-top-30">안녕하세요, 크몽 고객센터입니다.</div>
+                                        <h5 class="line-height margin-top-5">문의 내용을 상세히 작성하여 보내주시면, 입력된 이메일 주소를 통해 빠르게 답변해드리도록 하겠습니다. </h5>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none">
+                                    <div class="col-xs-12 padding-all-20">
+                                        <h6 class="font-color-lighter">이메일</h6>
+                                        <div class="form-group margin-bottom-10" id="helpCenter_from_email">
+                                            <input class="form-control input-sm" type="text" placeholder="이메일">
+                                            <span class="help-block padding-left-0" id="helpCenter_from_email_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;이메일을 입력해주세요.</span>
+                                        </div>
+
+                                        <div class="form-group margin-bottom-10" id="helpCenter_title">
+                                            <h6 class="margin-top-15 font-color-lighter">제목</h6>
+                                            <div class="form-group input-text-group">
+                                                <span class="input-inner-text-sm-no-label bg-color-white padding-left-5 color-primary cursor" style="display: none; pointer-events: auto;" onclick="$('#related_kb').toggle();">                                                    관련 답변들(0개)                                                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                                </span>
+                                                <input class="form-control input-sm text-left-imp" type="search" placeholder="제목을 작성해주세요.">
+                                            </div>
+                                            <span class="help-block padding-left-0" id="helpCenter_title_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;제목을 입력해주세요.</span>
+                                        </div>
+
+                                        <ul class="list-group overflow-y margin-none" id="related_kb" style="display: none;">
+                                            
+                                            <li class="list-group-item border-radius-none bg-color-gray border-top-none text-right" style="display: none;" onclick="$('#kmongFAQLink').trigger('click');">
+                                                <span class="cursor font-color-lighter font-size-h6">
+                                                    관련문의더보기
+                                                </span>
+                                            </li>
+                                        </ul>
+
+
+                                        <div class="form-group margin-all-0" id="helpCenter_body">
+                                            <h6 class="margin-top-15 font-color-lighter">내용</h6>
+                                            <textarea class="form-control border-radius-bottom-none" placeholder="문의 내용을 작성해주세요." rows="7">문의 내용을 작성해주세요.</textarea>
+                                            <span class="help-block padding-left-0" id="helpCenter_body_error" style="display: none;"><i class="fa fa-exclamation-triangle"></i>&nbsp;내용을 입력해주세요.</span>
+                                        </div>
+
+
+                                        <div class="border-solid border-top-none padding-all-10">
+                                            <div class="row dropzone-preview-helpcenter margin-top-5"></div>
+                                            <a class="btn btn-default sendBtn btn-xs dz-clickable" id="dropzoneFileHelp">파일첨부</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none">
+                                    <div class="col-xs-12 padding-left-20 padding-right-20">
+                                        <a class="btn btn-primary btn-sm btn-block" id="sendHelpCenterForm">문의하기</a>
+                                    </div>
+                                </div>
+
+                                <div class="row margin-none margin-top-10">
+                                    <div class="col-xs-12">
+                                        <ul class="font-size-h6 font-color-lighter padding-left-25">
+                                            <li>주말·공휴일은 답변이 늦어질 수 있습니다.</li>
+                                            <li>파일첨부는 최대 4개까지 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kmongKBTab tab-pane kmong-KB-menu-margin-adjust" id="kmongNotifications" role="tabpanel">
+                                <ul class="list-group">
+                                    
+                                </ul>
+
+                                <div class="row margin-left-0 margin-right-0" id="kmongNotificationLoadingDiv" style="display: none;">
+                                    <div class="col-xs-12 padding-all-20 text-center margin-top-50">
+                                        <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                                        <h5>불러오는 중</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="item bg-color-fa kmong-KB-menu kmong-KB-menu-margin-adjust" style="height: 669px;" data-index="1">
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kmongNotificationDetailBody" style="height: 574px; display: none;">
+                    <div class="col-xs-12 padding-left-0 padding-right-0">
+                        <ul class="nav kmong-KB-nav" role="tablist">
+                            <li class="col-xs-12 cursor font-color-lighter padding-top-30 padding-bottom-30" role="presentation" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);">
+                                <span class="padding-left-15">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    안내 목록 보기
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 padding-left-20 padding-right-20 padding-bottom-20">
+                        <h5 class="font-color-lighter"></h5>
+                        
+
+                        
+
+                        
+                    </div>
+                </div>
+
+                <div class="row margin-left-0 margin-right-0 bg-color-black padding-top-15 padding-bottom-15 kmong-KB-footer" id="kmongNotificationDetailFooter">
+                    <div class="col-xs-6 padding-right-0 padding-left-20 text-left">
+                        <a class="plain-color-white" id="kmongNotificationPrevBtn" href="javascript:void(0)"> 이전</a>
+                    </div>
+                    <div class="col-xs-6 padding-left-0  padding-right-20 text-right">
+                        <a class="plain-color-white" id="kmongNotificationNextBtn" href="javascript:void(0)">다음 </a>
+                    </div>
+                </div>
+
+
+                <div class="row margin-left-0 margin-right-0 overflow-y" id="kmongNotificationDetailLoadingBody" style="height: 629px;">
+                    <div class="col-xs-12 padding-all-20 text-center margin-top-50">
+                        <div class="la-ball-fall color-black"><div></div><div></div><div></div></div>
+                        <h5>불러오는 중</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg-color-fa overflow-y kmong-KB-menu kmong-KB-menu-margin-adjust" style="height: 669px;" data-index="2">
+                <div class="row margin-left-0 margin-right-0">
+                    <div class="col-xs-11 padding-left-15 padding-right-0">
+                        <ul class="nav kmong-KB-nav" role="tablist">
+                            <li class="col-xs-12 cursor padding-top-20 padding-bottom-20" role="presentation" onclick="$('#kmongKnowledgeBaseCarousel').carousel(0);">
+                                <i class="fa fa-arrow-left color-gray-d1" aria-hidden="true"></i>&nbsp;
+                                <span class="font-color-lighter">                                                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row margin-left-0 margin-right-0">
+                    <div class="col-xs-12 padding-left-15 padding-right-15">
+                        <div class="font-size-20 NGB margin-bottom-15 kmong-kb-images-size">                                                    </div>
+                        <div class="knowledgeBaseDetailContent font-size-h5 text-justify style-style padding-bottom-40"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></div></div></div></div></div></div></div></body>
+</html>
