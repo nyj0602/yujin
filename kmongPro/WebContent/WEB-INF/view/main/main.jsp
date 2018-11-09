@@ -76,7 +76,6 @@
 
 </head>
 <body id="master_body">
-<h1>어떻게 들어오는거징</h1>
 
 	<header>
 
